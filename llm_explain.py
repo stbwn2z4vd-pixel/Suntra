@@ -112,21 +112,42 @@ def _call_anthropic(prompt: str) -> str | None:
 def _call_gemini(prompt: str) -> str | None:
     if not GEMINI_API_KEY:
         return None
-    url = GEMINI_URL_TEMPLATE.format(model=cfg.GEMINI_MODEL)
-    response = requests.post(
-        url,
-        params={"key": GEMINI_API_KEY},
-        json={"contents": [{"parts": [{"text": prompt}]}]},
-        timeout=30,
-    )
-    response.raise_for_status()
-    payload = response.json()
-    candidates = payload.get("candidates", [])
-    if not candidates:
-        return None
-    parts = candidates[0].get("content", {}).get("parts", [])
-    text = "".join(p.get("text", "") for p in parts).strip()
-    return text or None
+
+    last_error = None
+    for model in cfg.GEMINI_MODEL_CANDIDATES:
+        url = GEMINI_URL_TEMPLATE.format(model=model)
+        try:
+            response = requests.post(
+                url,
+                params={"key": GEMINI_API_KEY},
+                json={"contents": [{"parts": [{"text": prompt}]}]},
+                timeout=30,
+            )
+            if response.status_code == 404:
+                # Modellnamnet finns inte (längre) för det här kontot/API-versionen -
+                # prova nästa kandidat istället för att ge upp direkt.
+                logger.info("Gemini-modellen '%s' gav 404, provar nästa kandidat.", model)
+                last_error = f"404 för modell {model}"
+                continue
+
+            response.raise_for_status()
+            payload = response.json()
+            candidates = payload.get("candidates", [])
+            if not candidates:
+                continue
+            parts = candidates[0].get("content", {}).get("parts", [])
+            text = "".join(p.get("text", "") for p in parts).strip()
+            if text:
+                return text
+        except Exception as exc:  # noqa: BLE001
+            last_error = str(exc)
+            # Andra fel än 404 (nätverk, 429, 403 osv.) - inte meningsfullt
+            # att prova fler modellnamn, ge upp Gemini för den här gången.
+            raise
+
+    if last_error:
+        logger.warning("Alla Gemini-modellkandidater misslyckades: %s", last_error)
+    return None
 
 
 def _parse_response(raw_text: str) -> dict | None:
