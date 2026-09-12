@@ -98,5 +98,6 @@ NEWS_MAX_ITEMS = 3
 # Om den saknas används den mall-baserade förklaringen istället.
 USE_LLM_EXPLANATION = True
 ANTHROPIC_MODEL = "claude-sonnet-5"
+GEMINI_MODEL = "gemini-2.5-flash"  # gratis via Google AI Studio
 
 STATE_FILE = "state.json"
