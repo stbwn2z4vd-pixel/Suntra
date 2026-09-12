@@ -123,11 +123,12 @@ def _call_gemini(prompt: str) -> str | None:
                 json={"contents": [{"parts": [{"text": prompt}]}]},
                 timeout=30,
             )
-            if response.status_code == 404:
-                # Modellnamnet finns inte (längre) för det här kontot/API-versionen -
-                # prova nästa kandidat istället för att ge upp direkt.
-                logger.info("Gemini-modellen '%s' gav 404, provar nästa kandidat.", model)
-                last_error = f"404 för modell {model}"
+            if response.status_code in (404, 429, 503):
+                # 404 = modellnamnet finns inte (längre) för det här kontot.
+                # 429/503 = tillfälligt överbelastat/rate-limitat hos Google.
+                # I båda fallen: prova nästa kandidat istället för att ge upp.
+                logger.info("Gemini-modellen '%s' gav %s, provar nästa kandidat.", model, response.status_code)
+                last_error = f"{response.status_code} för modell {model}"
                 continue
 
             response.raise_for_status()
@@ -141,8 +142,8 @@ def _call_gemini(prompt: str) -> str | None:
                 return text
         except Exception as exc:  # noqa: BLE001
             last_error = str(exc)
-            # Andra fel än 404 (nätverk, 429, 403 osv.) - inte meningsfullt
-            # att prova fler modellnamn, ge upp Gemini för den här gången.
+            # Andra fel (nätverk, 401/403 osv.) - inte meningsfullt att
+            # prova fler modellnamn, ge upp Gemini för den här gången.
             raise
 
     if last_error:
