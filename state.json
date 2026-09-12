@@ -1,1 +1,102 @@
-{}
+{
+  "ERIC-B.ST": {
+    "label": "HOLD",
+    "score": 0
+  },
+  "VOLV-B.ST": {
+    "label": "BUY",
+    "score": 2
+  },
+  "ATCO-A.ST": {
+    "label": "BUY",
+    "score": 2
+  },
+  "ATCO-B.ST": {
+    "label": "HOLD",
+    "score": -1
+  },
+  "INVE-B.ST": {
+    "label": "HOLD",
+    "score": 0
+  },
+  "SAND.ST": {
+    "label": "BUY",
+    "score": 2
+  },
+  "SEB-A.ST": {
+    "label": "HOLD",
+    "score": 1
+  },
+  "SWED-A.ST": {
+    "label": "HOLD",
+    "score": 1
+  },
+  "HM-B.ST": {
+    "label": "HOLD",
+    "score": -1
+  },
+  "ASSA-B.ST": {
+    "label": "HOLD",
+    "score": 1
+  },
+  "ALFA.ST": {
+    "label": "BUY",
+    "score": 2
+  },
+  "SKF-B.ST": {
+    "label": "HOLD",
+    "score": -1
+  },
+  "TELIA.ST": {
+    "label": "HOLD",
+    "score": 1
+  },
+  "NDA-SE.ST": {
+    "label": "BUY",
+    "score": 3
+  },
+  "ESSITY-B.ST": {
+    "label": "HOLD",
+    "score": 1
+  },
+  "AAPL": {
+    "label": "BUY",
+    "score": 3
+  },
+  "MSFT": {
+    "label": "HOLD",
+    "score": 1
+  },
+  "GOOGL": {
+    "label": "HOLD",
+    "score": 1
+  },
+  "AMZN": {
+    "label": "BUY",
+    "score": 2
+  },
+  "NVDA": {
+    "label": "HOLD",
+    "score": 1
+  },
+  "META": {
+    "label": "BUY",
+    "score": 2
+  },
+  "TSLA": {
+    "label": "BUY",
+    "score": 3
+  },
+  "BRK-B": {
+    "label": "HOLD",
+    "score": 1
+  },
+  "JPM": {
+    "label": "BUY",
+    "score": 2
+  },
+  "V": {
+    "label": "BUY",
+    "score": 2
+  }
+}
