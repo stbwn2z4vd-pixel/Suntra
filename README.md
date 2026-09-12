@@ -28,22 +28,54 @@ Körs helt gratis via **GitHub Actions**.
 2. Klicka **New repository secret**.
 3. Namn: `NTFY_TOPIC`, Värde: topic-namnet du valde i steg 1.
 
-## 4. (Valfritt) Slå på AI-skriven förklaringstext
+## 4. (Valfritt) Slå på AI-skriven förklaring + oberoende bedömning
 
 Systemet skriver alltid en mall-baserad, punktvis förklaring
-automatiskt (gratis, ingen extra tjänst behövs). Om du dessutom vill
-att **Claude** ska skriva en sammanhängande, resonerande text kring
-varje rekommendation (argument + motargument, baserat på siffrorna
-och nyheterna):
+automatiskt (gratis, ingen extra tjänst behövs) – **det är alltid
+denna, tillsammans med poängmodellen, som avgör om en notis skickas.**
+
+Om du dessutom vill ha en AI inkopplad får du **två extra saker** i
+notisen, tydligt separerade från den tekniska rekommendationen:
+
+- **AI-omdöme**: en egen, oberoende bedömning – "Håller med",
+  "Delvis" eller "Skeptisk" + en konfidenssiffra 1–5. AI:n väger in
+  färska nyheter (t.ex. en vinstvarning eller rättstvist) som det
+  tekniska systemet inte kan se, och kan alltså vara oense med
+  poängmodellen om nyheterna talar för det.
+- **Textförklaring**: en sammanhängande text med argument för och
+  eventuella motargument/risker.
+
+Viktigt: AI:n **ersätter aldrig** poängmodellen – den lägger bara
+till ett extra perspektiv ovanpå den redan beräknade rekommendationen.
+Om AI-anropet skulle strula (nätverksfel, tillfällig gräns nådd, osv.)
+skickas notisen ändå, bara utan AI-delen.
+
+Två alternativ för vilken AI som används:
+
+### Alternativ A: Gemini (gratis, rekommenderas)
+
+1. Gå till https://aistudio.google.com/apikey och logga in med ett
+   Google-konto.
+2. Klicka **Create API key** – inget kreditkort krävs.
+3. Lägg in den som en secret i repot: **Settings -> Secrets and
+   variables -> Actions -> New repository secret**.
+   Namn: `GEMINI_API_KEY`, Värde: nyckeln du fick.
+
+Gratisnivån har en daglig gräns, men eftersom vi bara gör ett anrop
+per aktie **och bara när dess rekommendation faktiskt ändras**
+(inte varje körning), räcker den mer än väl för det här systemet.
+
+### Alternativ B: Claude / Anthropic (betalt, bättre kvalitet)
 
 1. Skaffa en API-nyckel på https://console.anthropic.com (kräver eget
    konto, det är en betaltjänst – kostnaden per körning är dock
    mycket liten eftersom det bara är kort text).
-2. Lägg in den som ytterligare en secret i repot:
-   Namn: `ANTHROPIC_API_KEY`, Värde: din nyckel.
+2. Lägg in den som secreten `ANTHROPIC_API_KEY` på samma sätt som
+   ovan.
 
-Lämnas secreten tom/borttagen används bara mall-förklaringen – allt
-annat i systemet fungerar precis likadant.
+Om du sätter **båda** nycklarna prioriteras Claude. Lämnas båda
+secrets tomma/borttagna används bara mall-förklaringen – allt annat
+i systemet fungerar precis likadant.
 
 ## 5. Testa
 
