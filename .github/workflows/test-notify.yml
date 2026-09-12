@@ -1,0 +1,24 @@
+name: Test Notification
+
+on:
+  workflow_dispatch: {}   # körs bara manuellt, aldrig schemalagt
+
+jobs:
+  send-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checka ut repo
+        uses: actions/checkout@v4
+
+      - name: Sätt upp Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installera beroenden
+        run: pip install requests
+
+      - name: Skicka testnotis
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python test_notify.py
