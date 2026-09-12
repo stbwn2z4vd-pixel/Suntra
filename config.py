@@ -98,6 +98,14 @@ NEWS_MAX_ITEMS = 3
 # Om den saknas används den mall-baserade förklaringen istället.
 USE_LLM_EXPLANATION = True
 ANTHROPIC_MODEL = "claude-sonnet-5"
-GEMINI_MODEL = "gemini-2.5-flash"  # gratis via Google AI Studio
+# Google byter/döper om Gemini-modeller ganska ofta. Vi provar dessa i
+# ordning tills en fungerar, så att systemet inte går sönder bara för
+# att ett enskilt modellnamn pensioneras.
+GEMINI_MODEL_CANDIDATES = [
+    "gemini-2.5-flash",
+    "gemini-2.5-flash-lite",
+    "gemini-flash-latest",
+    "gemini-2.0-flash",
+]
 
 STATE_FILE = "state.json"
