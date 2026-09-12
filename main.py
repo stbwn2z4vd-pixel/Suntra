@@ -3,12 +3,16 @@ Huvudskript. Körs schemalagt (se .github/workflows/monitor.yml).
 
 Flöde per ticker:
  1. Hämta pris + räkna ut RSI, MACD, trend, 52-veckorsläge, analytiker
- 2. Väg ihop allt till en rekommendation (scoring.py)
+ 2. Väg ihop allt till en rekommendation (scoring.py) - detta är den
+    "officiella" tekniska rekommendationen och styr ALLTID om en
+    notis skickas.
  3. Jämför mot förra körningens rekommendation (state.json)
  4. Om den ändrats:
     - hämta färska nyhetsrubriker
-    - försök få en AI-skriven sammanfattning (llm_explain.py, valfritt)
-    - skicka EN pushnotis med både siffror, förklaring och ev. nyheter
+    - försök få en oberoende AI-bedömning + textförklaring
+      (llm_explain.py, valfritt - visas separat, ersätter aldrig
+      den tekniska rekommendationen)
+    - skicka EN pushnotis med siffror, ev. AI-bedömning och ev. nyheter
  5. Spara nya rekommendationer till state.json (committas av workflowen)
 """
 
@@ -20,7 +24,7 @@ from config import ALL_TICKERS, STATE_FILE, FETCH_NEWS_ON_CHANGE
 from analysis import analyze_ticker
 from scoring import compute_composite_score
 from news import get_recent_headlines, format_headlines_for_message
-from llm_explain import get_llm_summary
+from llm_explain import get_ai_analysis
 from notify import send_notification
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -54,15 +58,22 @@ def save_state(state: dict) -> None:
         json.dump(state, f, indent=2, ensure_ascii=False)
 
 
-def build_message(ticker: str, old_label: str | None, result: dict, score_result, news_text: str, llm_summary: str | None) -> str:
-    parts = [f"Ny rekommendation: {old_label or '(första körningen)'} -> {score_result.label}", ""]
-
-    if llm_summary:
-        parts.append(llm_summary)
-        parts.append("")
-        parts.append("Detaljer:")
-
+def build_message(old_label: str | None, score_result, news_text: str, ai_analysis: dict | None) -> str:
+    parts = [f"Teknisk rekommendation: {old_label or '(första körningen)'} -> {score_result.label}", ""]
     parts.extend(score_result.bullets)
+
+    if ai_analysis:
+        parts.append("")
+        parts.append("— — —")
+        verdict = ai_analysis.get("verdict")
+        confidence = ai_analysis.get("confidence")
+        if verdict:
+            conf_text = f" (konfidens {confidence}/5)" if confidence else ""
+            parts.append(f"AI-omdöme: {verdict}{conf_text}")
+            parts.append("")
+        explanation = ai_analysis.get("explanation")
+        if explanation:
+            parts.append(explanation)
 
     if news_text:
         parts.append("")
@@ -116,10 +127,10 @@ def main() -> None:
             headlines = get_recent_headlines(ticker)
             news_text = format_headlines_for_message(headlines)
 
-        llm_data = {**result, "total_score": score_result.total_score, "label": score_result.label}
-        llm_summary = get_llm_summary(ticker, llm_data, score_result.bullets, news_text)
+        ai_data = {**result, "total_score": score_result.total_score, "label": score_result.label}
+        ai_analysis = get_ai_analysis(ticker, ai_data, score_result.bullets, news_text)
 
-        message = build_message(ticker, old_label, result, score_result, news_text, llm_summary)
+        message = build_message(old_label, score_result, news_text, ai_analysis)
         title = f"{ticker}: {score_result.label} ({result['price']})"
 
         send_notification(
