@@ -189,3 +189,64 @@ def get_ai_analysis(ticker: str, data: dict, bullets: list[str], news_text: str)
 
     logger.info("Ingen AI-nyckel satt eller alla anrop misslyckades - använder bara mallen för %s.", ticker)
     return None
+
+
+def _build_geopolitical_prompt(headlines: list[dict]) -> str:
+    lines = "\n".join(f"- {h['title']} ({h['publisher']})" for h in headlines)
+    return f"""Du är en finansanalytiker. Nedan är färska nyhetsrubriker kopplade
+till breda marknadsindex (amerikanska och svenska börsen).
+
+{lines}
+
+Uppgift: Avgör om NÅGON av rubrikerna beskriver en geopolitisk eller
+makroekonomisk händelse som sannolikt kan påverka aktiemarknaden i
+stort - t.ex. krig eller upptrappad konflikt, sanktioner, handelstullar,
+stora centralbanksbeslut (räntor), valresultat med marknadspåverkan,
+större terrorhändelse, pandemi, eller finansiell kris. Vanlig
+bolagsspecifik nyhet (enskilda rapporter, produktlanseringar, VD-byten
+osv.) räknas INTE, även om den rör ett stort bolag.
+
+Svara i EXAKT detta format, inget annat:
+
+RELEVANT: <JA eller NEJ>
+SAMMANFATTNING: <om JA: 2-3 meningar på svenska om händelsen och möjlig
+marknadspåverkan. Om NEJ, skriv exakt: Inget att rapportera.>
+RUBRIK: <om JA: kopiera den mest relevanta rubriken ordagrant. Om NEJ, skriv: ->
+"""
+
+
+def _parse_geopolitical_response(raw_text: str) -> dict:
+    relevant_match = re.search(r"RELEVANT:\s*(JA|NEJ)", raw_text, re.IGNORECASE)
+    summary_match = re.search(r"SAMMANFATTNING:\s*(.+?)(?:\n\s*RUBRIK:|$)", raw_text, re.IGNORECASE | re.DOTALL)
+    headline_match = re.search(r"RUBRIK:\s*(.+)", raw_text, re.IGNORECASE)
+
+    relevant = bool(relevant_match) and relevant_match.group(1).strip().upper() == "JA"
+    return {
+        "relevant": relevant,
+        "summary": summary_match.group(1).strip() if summary_match else None,
+        "headline": headline_match.group(1).strip() if headline_match else None,
+    }
+
+
+def get_geopolitical_analysis(headlines: list[dict]) -> dict | None:
+    """
+    Låter AI:n bedöma om någon av de givna marknadsrubrikerna är en
+    genuint marknadspåverkande geopolitisk/makrohändelse. Returnerar
+    None om funktionen är avstängd, ingen nyckel finns, inga rubriker
+    gavs, eller alla anrop misslyckas.
+    """
+    if not headlines or not cfg.USE_LLM_EXPLANATION:
+        return None
+
+    prompt = _build_geopolitical_prompt(headlines)
+
+    for name, call_fn in (("Anthropic", _call_anthropic), ("Gemini", _call_gemini)):
+        try:
+            raw_text = call_fn(prompt)
+            if raw_text:
+                return _parse_geopolitical_response(raw_text)
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("%s-anrop (geopolitik) misslyckades, provar nästa alternativ: %s", name, exc)
+
+    logger.info("Ingen AI-nyckel satt eller alla anrop misslyckades - hoppar över geopolitisk analys.")
+    return None
