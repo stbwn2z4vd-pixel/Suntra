@@ -27,6 +27,7 @@ Flöde per ticker:
 import json
 import logging
 import os
+import time
 
 from config import (
     ALL_TICKERS,
@@ -36,6 +37,8 @@ from config import (
     FETCH_NEWS_ON_CHANGE,
     CHECK_GEOPOLITICAL_NEWS,
     GEOPOLITICAL_SEEN_CAP,
+    AI_CALL_DELAY_SECONDS,
+    display_name,
 )
 from analysis import analyze_ticker
 from scoring import compute_composite_score
@@ -88,8 +91,8 @@ def get_tickers_for_this_run() -> list[str]:
     return ALL_TICKERS
 
 
-def build_message(old_label: str | None, score_result, news_text: str, ai_analysis: dict | None) -> str:
-    parts = [f"Teknisk rekommendation: {old_label or '(första körningen)'} -> {score_result.label}", ""]
+def build_message(name: str, old_label: str | None, score_result, news_text: str, ai_analysis: dict | None) -> str:
+    parts = [f"{name}", f"Teknisk rekommendation: {old_label or '(första körningen)'} -> {score_result.label}", ""]
     parts.extend(score_result.bullets)
 
     if ai_analysis:
@@ -156,10 +159,12 @@ def run_ticker_analysis(state: dict) -> int:
             news_text = format_headlines_for_message(headlines)
 
         ai_data = {**result, "total_score": score_result.total_score, "label": score_result.label}
-        ai_analysis = get_ai_analysis(ticker, ai_data, score_result.bullets, news_text)
+        name = display_name(ticker)
+        ai_analysis = get_ai_analysis(name, ai_data, score_result.bullets, news_text)
+        time.sleep(AI_CALL_DELAY_SECONDS)  # undvik att bränna igenom rate limit vid flera ändringar i rad
 
-        message = build_message(old_label, score_result, news_text, ai_analysis)
-        title = f"{ticker}: {score_result.label} ({result['price']})"
+        message = build_message(name, old_label, score_result, news_text, ai_analysis)
+        title = f"{name}: {score_result.label} ({result['price']})"
 
         send_notification(
             title=title,
