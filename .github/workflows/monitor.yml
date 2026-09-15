@@ -1,0 +1,52 @@
+name: Stock Monitor
+
+on:
+  schedule:
+    # 11:00 UTC, mån-fre = ~12:00 svensk tid -> kör BARA svenska aktier.
+    # (12:00 vintertid CET / 13:00 sommartid CEST - cron justerar inte
+    # automatiskt för sommartid.)
+    - cron: "0 11 * * 1-5"
+    # 17:00 UTC, mån-fre = ~18:00 svensk tid -> kör BARA amerikanska aktier.
+    # (18:00 vintertid CET / 19:00 sommartid CEST.)
+    - cron: "0 17 * * 1-5"
+  workflow_dispatch: {}   # manuell körning kör ALLA aktier (SE + US)
+
+permissions:
+  contents: write   # behövs för att skriptet ska kunna committa state.json
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checka ut repo
+        uses: actions/checkout@v4
+
+      - name: Sätt upp Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installera beroenden
+        run: pip install -r requirements.txt
+
+      - name: Kör aktieanalys
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          # Valfritt: ger AI-skriven förklaringstext + geopolitisk
+          # bevakning istället för bara mallen. GEMINI_API_KEY är gratis
+          # (Google AI Studio). ANTHROPIC_API_KEY är betald men
+          # prioriteras om båda är satta.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Avgör vilka aktier den här körningen tittar på, baserat på
+          # vilket schema som triggade den. "ALL" vid manuell körning.
+          MARKET_FILTER: ${{ github.event.schedule == '0 11 * * 1-5' && 'SE' || (github.event.schedule == '0 17 * * 1-5' && 'US' || 'ALL') }}
+        run: python main.py
+
+      - name: Spara uppdaterat state.json
+        run: |
+          git config user.name "stock-monitor-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add state.json
+          git diff --staged --quiet || git commit -m "Uppdatera signalstatus [skip ci]"
+          git push
