@@ -72,8 +72,8 @@
     "score": 4
   },
   "AMZN": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "NVDA": {
     "label": "HOLD",
@@ -256,8 +256,8 @@
     "score": 1
   },
   "XOM": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 4
   },
   "ORCL": {
     "label": "HOLD",
@@ -268,16 +268,16 @@
     "score": 1
   },
   "NFLX": {
-    "label": "SELL",
-    "score": -2
+    "label": "HOLD",
+    "score": 1
   },
   "HD": {
     "label": "HOLD",
     "score": 1
   },
   "PG": {
-    "label": "BUY",
-    "score": 4
+    "label": "STRONG BUY",
+    "score": 5
   },
   "JNJ": {
     "label": "BUY",
@@ -292,20 +292,20 @@
     "score": 1
   },
   "KO": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "CVX": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "CRM": {
     "label": "HOLD",
-    "score": -1
+    "score": 1
   },
   "AMD": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "CSCO": {
     "label": "BUY",
@@ -329,11 +329,11 @@
   },
   "WFC": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "DIS": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "NKE": {
     "label": "HOLD",
@@ -345,7 +345,7 @@
   },
   "QCOM": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "INTC": {
     "label": "BUY",
@@ -368,8 +368,8 @@
     "score": -1
   },
   "HON": {
-    "label": "BUY",
-    "score": 3
+    "label": "HOLD",
+    "score": 1
   },
   "BA": {
     "label": "BUY",
@@ -384,33 +384,41 @@
     "score": -1
   },
   "MS": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "AXP": {
     "label": "BUY",
     "score": 2
   },
   "UNP": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 0
   },
   "_geopolitical_seen": [
-    "Western Digital (WDC): The Fund’s Top Relative Contributor",
-    "Why Did CRWD, ELMT, OKTA Stocks Surge To 52-Week Highs Today?",
-    "This Index Fund Could Turn $25,000 Into $20,635,655",
-    "10-year Treasuries cross above 5%, but are other market risks showing up?",
-    "2 Reasons to Watch COST and 1 to Stay Cautious",
-    "Stocks could have a tough road ahead if the Fed hikes rates: Chart of the Day",
-    "Why rising long-term yields can matter more than the next Fed hike",
+    "Seagate Technology (STX): The Primary Beneficiary of the AI Driven HDD Demand",
     "BE Stock Falls Most In Nearly A Month: Why This Analyst Sees Over 36% Upside",
-    "AI Safety Fears Drive Investors to J&J, Costco, and CrowdStrike for Cybersecurity",
+    "3 Reasons We Love Kirby (KEX)",
+    "10-year Treasuries cross above 5%, but are other market risks showing up?",
+    "Stock Market Today: Dow Dives, This Loan Play Craters; Bessent Says This On Trump Payments (Live Coverage)",
     "Dow, S&P 500, Nasdaq Futures Mixed Ahead Of Fed Rate Decision As AI Uncertainty Mounts: IOVA, PLAY, ELMT, RBLX Stocks In Focus",
     "Wells Fargo Delivers Stark Warning as S&P 500 Could Drop 10%",
-    "How a Fed rate hike would affect your bank accounts, loans, credit cards, and investments",
+    "Western Digital (WDC): The Fund’s Top Relative Contributor",
+    "2 Reasons to Watch COST and 1 to Stay Cautious",
+    "AI Safety Fears Drive Investors to J&J, Costco, and CrowdStrike for Cybersecurity",
     "Neuraxis Gains Nearly 137% in a Year: What's Driving the Stock?",
+    "Bessent grilled on the claim that ‘K-shaped economy is over’",
+    "Why Did CRWD, ELMT, OKTA Stocks Surge To 52-Week Highs Today?",
+    "Update: US Equity Indexes Drop as 10-Year Yield Hits 19-Year High, Crude Oil Prices Surge",
+    "3 Reasons to Sell KE and 1 Stock to Buy Instead",
+    "Global shares fall as Treasury yields scale fresh peaks",
+    "Applied Materials Stock Already Fell Without A Shock, So What Would A Real One Do?",
+    "Stocks could have a tough road ahead if the Fed hikes rates: Chart of the Day",
+    "This Index Fund Could Turn $25,000 Into $20,635,655",
+    "Why rising long-term yields can matter more than the next Fed hike",
+    "How a Fed rate hike would affect your bank accounts, loans, credit cards, and investments",
+    "CSBR Stock Slips Post Q1 Earnings Despite Revenue, Margin Growth",
     "Chipotle Falls 5%: Profit Taking After a Strong Month, or the Salmonella Headline Again?",
-    "Seagate Technology (STX): The Primary Beneficiary of the AI Driven HDD Demand",
-    "CSBR Stock Slips Post Q1 Earnings Despite Revenue, Margin Growth"
+    "Dow, S&P 500 and Nasdaq Fall Ahead of Fed Decision"
   ]
 }
