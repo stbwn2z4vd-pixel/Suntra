@@ -85,6 +85,40 @@ på schemat. Första körningen bygger bara upp en "baseline" per aktie
 (du får ingen notis då) – från och med att en akties rekommendation
 ändras nästa gång får du en notis.
 
+## Hur och när det körs
+
+Systemet körs automatiskt två gånger per vardag, med olika aktier vid
+varje tillfälle:
+
+- **~12:00 svensk tid**: bara **svenska** aktier (Stockholmsbörsen har
+  öppnat, amerikanska börsen inte än).
+- **~18:00 svensk tid**: bara **amerikanska** aktier (några timmar in
+  i den amerikanska handelsdagen).
+
+(Tiderna stämmer exakt under vintertid/CET; under sommartid/CEST blir
+båda en timme senare eftersom GitHub Actions cron inte justerar för
+sommartid automatiskt. Ändra klockslagen i `.github/workflows/monitor.yml`
+om du vill finjustera.)
+
+En manuell körning via **Run workflow** i Actions-fliken kör alltid
+**alla** aktier (både svenska och amerikanska) oavsett tid på dygnet.
+
+## Geopolitisk/makroekonomisk bevakning
+
+Utöver de enskilda aktiernas rekommendationer kollar systemet vid
+**varje körning** färska rubriker kopplade till breda marknadsindex
+(S&P 500 och OMX Stockholm 30) - inte en specifik akties nyheter, utan
+sådant som rör hela marknaden. En AI bedömer om något är en genuint
+marknadspåverkande händelse (krig, sanktioner, handelstullar, stora
+centralbanksbeslut, osv.) - vardaglig bolagsnyhet ignoreras.
+
+Du får en separat notis ("⚠️ Möjlig marknadspåverkande händelse") bara
+när något nytt och relevant dyker upp. Systemet minns vilka rubriker
+det redan sett (sparat i `state.json`), så du får inte samma varning
+upprepade gånger. Denna funktion kräver samma AI-nyckel som
+AI-omdömet (`GEMINI_API_KEY` eller `ANTHROPIC_API_KEY`, se ovan) -
+utan nyckel hoppas den bara över.
+
 ## Hur rekommendationen räknas fram
 
 Varje faktor ger plus- eller minuspoäng, som summeras till en
