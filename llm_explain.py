@@ -26,6 +26,7 @@ det här steget failar.
 import logging
 import os
 import re
+import time
 
 import requests
 
@@ -116,35 +117,46 @@ def _call_gemini(prompt: str) -> str | None:
     last_error = None
     for model in cfg.GEMINI_MODEL_CANDIDATES:
         url = GEMINI_URL_TEMPLATE.format(model=model)
-        try:
-            response = requests.post(
-                url,
-                params={"key": GEMINI_API_KEY},
-                json={"contents": [{"parts": [{"text": prompt}]}]},
-                timeout=30,
-            )
-            if response.status_code in (404, 429, 503):
-                # 404 = modellnamnet finns inte (längre) för det här kontot.
-                # 429/503 = tillfälligt överbelastat/rate-limitat hos Google.
-                # I båda fallen: prova nästa kandidat istället för att ge upp.
-                logger.info("Gemini-modellen '%s' gav %s, provar nästa kandidat.", model, response.status_code)
-                last_error = f"{response.status_code} för modell {model}"
-                continue
 
-            response.raise_for_status()
-            payload = response.json()
-            candidates = payload.get("candidates", [])
-            if not candidates:
-                continue
-            parts = candidates[0].get("content", {}).get("parts", [])
-            text = "".join(p.get("text", "") for p in parts).strip()
-            if text:
-                return text
-        except Exception as exc:  # noqa: BLE001
-            last_error = str(exc)
-            # Andra fel (nätverk, 401/403 osv.) - inte meningsfullt att
-            # prova fler modellnamn, ge upp Gemini för den här gången.
-            raise
+        for attempt in range(2):  # ett första försök + ett snabbt återförsök vid rate limit
+            try:
+                response = requests.post(
+                    url,
+                    params={"key": GEMINI_API_KEY},
+                    json={"contents": [{"parts": [{"text": prompt}]}]},
+                    timeout=30,
+                )
+
+                if response.status_code == 429 and attempt == 0:
+                    # Troligen tillfällig rate limit - vänta lite och prova samma
+                    # modell en gång till innan vi ger upp och går vidare.
+                    logger.info("Gemini-modellen '%s' gav 429 (rate limit), väntar och försöker igen.", model)
+                    time.sleep(8)
+                    continue
+
+                if response.status_code in (404, 429, 503):
+                    # 404 = modellnamnet finns inte (längre) för det här kontot.
+                    # 429/503 kvarstår efter återförsök = fortsatt överbelastat.
+                    # I båda fallen: prova nästa kandidat istället för att ge upp.
+                    logger.info("Gemini-modellen '%s' gav %s, provar nästa kandidat.", model, response.status_code)
+                    last_error = f"{response.status_code} för modell {model}"
+                    break
+
+                response.raise_for_status()
+                payload = response.json()
+                candidates = payload.get("candidates", [])
+                if not candidates:
+                    break
+                parts = candidates[0].get("content", {}).get("parts", [])
+                text = "".join(p.get("text", "") for p in parts).strip()
+                if text:
+                    return text
+                break
+            except Exception as exc:  # noqa: BLE001
+                last_error = str(exc)
+                # Andra fel (nätverk, 401/403 osv.) - inte meningsfullt att
+                # prova fler modellnamn, ge upp Gemini för den här gången.
+                raise
 
     if last_error:
         logger.warning("Alla Gemini-modellkandidater misslyckades: %s", last_error)
