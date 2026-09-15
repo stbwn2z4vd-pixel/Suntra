@@ -8,34 +8,109 @@ Lägg till/ta bort tickers efter behov.
 """
 
 SWEDISH_TICKERS = [
-    "ERIC-B.ST",   # Ericsson
-    "VOLV-B.ST",   # Volvo
-    "ATCO-A.ST",   # Atlas Copco A
-    "ATCO-B.ST",   # Atlas Copco B
-    "INVE-B.ST",   # Investor B
-    "SAND.ST",     # Sandvik
-    "SEB-A.ST",    # SEB
-    "SWED-A.ST",   # Swedbank
-    "HM-B.ST",     # H&M
-    "ASSA-B.ST",   # Assa Abloy
-    "ALFA.ST",     # Alfa Laval
-    "SKF-B.ST",    # SKF
-    "TELIA.ST",    # Telia
-    "NDA-SE.ST",   # Nordea
-    "ESSITY-B.ST", # Essity
+    "INVE-B.ST",    # Investor B
+    "ATCO-A.ST",    # Atlas Copco A
+    "ATCO-B.ST",    # Atlas Copco B
+    "AZN.ST",       # AstraZeneca
+    "VOLV-B.ST",    # Volvo B
+    "ERIC-B.ST",    # Ericsson B
+    "ASSA-B.ST",    # Assa Abloy B
+    "HEXA-B.ST",    # Hexagon B
+    "SAND.ST",      # Sandvik
+    "EPI-A.ST",     # Epiroc A
+    "EPI-B.ST",     # Epiroc B
+    "SEB-A.ST",     # SEB A
+    "SWED-A.ST",    # Swedbank A
+    "NDA-SE.ST",    # Nordea
+    "SHB-A.ST",     # Handelsbanken A
+    "SKA-B.ST",     # Skanska B
+    "SKF-B.ST",     # SKF B
+    "ALFA.ST",      # Alfa Laval
+    "TELIA.ST",     # Telia
+    "ESSITY-B.ST",  # Essity B
+    "HM-B.ST",      # H&M B
+    "GETI-B.ST",    # Getinge B
+    "BOL.ST",       # Boliden
+    "EVO.ST",       # Evolution AB
+    "NIBE-B.ST",    # Nibe Industrier B
+    "KINV-B.ST",    # Kinnevik B
+    "INDU-C.ST",    # Industrivärden C
+    "LATO-B.ST",    # Latour B
+    "EQT.ST",       # EQT AB
+    "SAGA-B.ST",    # Sagax B
+    "FABG.ST",      # Fabege
+    "CAST.ST",      # Castellum
+    "WALL-B.ST",    # Wallenstam B
+    "SCA-B.ST",     # SCA B
+    "HUSQ-B.ST",    # Husqvarna B
+    "ELUX-B.ST",    # Electrolux B
+    "ALIV-SDB.ST",  # Autoliv SDB
+    "BEIJ-B.ST",    # Beijer Ref B
+    "INDT.ST",      # Indutrade
+    "LIFCO-B.ST",   # Lifco B
+    "ADDT-B.ST",    # Addtech B
+    "SWEC-B.ST",    # Sweco B
+    "AXFO.ST",      # Axfood
+    "LOOM-B.ST",    # Loomis B
+    "TEL2-B.ST",    # Tele2 B
+    "BILI-A.ST",    # Bilia A
+    "EKTA-B.ST",    # Elekta B
+    "TREL-B.ST",    # Trelleborg B
+    "SSAB-B.ST",    # SSAB B
+    "HOLM-B.ST",    # Holmen B
 ]
 
 US_TICKERS = [
-    "AAPL",
-    "MSFT",
-    "GOOGL",
-    "AMZN",
-    "NVDA",
-    "META",
-    "TSLA",
-    "BRK-B",
-    "JPM",
-    "V",
+    "NVDA",   # Nvidia
+    "AAPL",   # Apple
+    "GOOGL",  # Alphabet
+    "MSFT",   # Microsoft
+    "AMZN",   # Amazon
+    "META",   # Meta
+    "AVGO",   # Broadcom
+    "BRK-B",  # Berkshire Hathaway
+    "TSLA",   # Tesla
+    "LLY",    # Eli Lilly
+    "JPM",    # JPMorgan Chase
+    "V",      # Visa
+    "WMT",    # Walmart
+    "MA",     # Mastercard
+    "UNH",    # UnitedHealth
+    "XOM",    # ExxonMobil
+    "ORCL",   # Oracle
+    "COST",   # Costco
+    "NFLX",   # Netflix
+    "HD",     # Home Depot
+    "PG",     # Procter & Gamble
+    "JNJ",    # Johnson & Johnson
+    "BAC",    # Bank of America
+    "ABBV",   # AbbVie
+    "KO",     # Coca-Cola
+    "CVX",    # Chevron
+    "CRM",    # Salesforce
+    "AMD",    # Advanced Micro Devices
+    "CSCO",   # Cisco
+    "PEP",    # PepsiCo
+    "MRK",    # Merck
+    "MCD",    # McDonald's
+    "ADBE",   # Adobe
+    "WFC",    # Wells Fargo
+    "DIS",    # Disney
+    "NKE",    # Nike
+    "IBM",    # IBM
+    "QCOM",   # Qualcomm
+    "INTC",   # Intel
+    "TXN",    # Texas Instruments
+    "VZ",     # Verizon
+    "T",      # AT&T
+    "CMCSA",  # Comcast
+    "HON",    # Honeywell
+    "BA",     # Boeing
+    "CAT",    # Caterpillar
+    "GS",     # Goldman Sachs
+    "MS",     # Morgan Stanley
+    "AXP",    # American Express
+    "UNP",    # Union Pacific
 ]
 
 ALL_TICKERS = SWEDISH_TICKERS + US_TICKERS
@@ -107,5 +182,14 @@ GEMINI_MODEL_CANDIDATES = [
     "gemini-flash-latest",
     "gemini-2.0-flash",
 ]
+
+# --- Geopolitiska/makronyheter som kan påverka hela marknaden ---
+# Kräver samma AI-nyckel som AI-omdömet (GEMINI_API_KEY eller
+# ANTHROPIC_API_KEY) - utan nyckel skippas den här delen helt,
+# eftersom nyckelordsbaserad "geopolitik-detektering" är för opålitlig.
+CHECK_GEOPOLITICAL_NEWS = True
+MARKET_INDEX_TICKERS = ["^GSPC", "^OMX"]  # S&P 500 resp. OMX Stockholm 30
+GEOPOLITICAL_NEWS_MAX_ITEMS = 8
+GEOPOLITICAL_SEEN_CAP = 150  # max antal ihågkomna rubriker (undviker dubbletter)
 
 STATE_FILE = "state.json"
