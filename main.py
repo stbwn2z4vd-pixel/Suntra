@@ -1,5 +1,8 @@
 """
-Huvudskript. Körs schemalagt (se .github/workflows/monitor.yml).
+Huvudskript. Körs schemalagt (se .github/workflows/monitor.yml) - numera
+två gånger per vardag: en gång bara för svenska aktier (kring 12:00
+svensk tid) och en gång bara för amerikanska (kring 18:00 svensk tid),
+styrt av miljövariabeln MARKET_FILTER ("SE", "US" eller "ALL").
 
 Flöde per ticker:
  1. Hämta pris + räkna ut RSI, MACD, trend, 52-veckorsläge, analytiker
@@ -13,18 +16,31 @@ Flöde per ticker:
       (llm_explain.py, valfritt - visas separat, ersätter aldrig
       den tekniska rekommendationen)
     - skicka EN pushnotis med siffror, ev. AI-bedömning och ev. nyheter
- 5. Spara nya rekommendationer till state.json (committas av workflowen)
+ 5. Kollar dessutom breda marknadsnyheter (S&P 500 / OMX Stockholm 30)
+    efter genuint marknadspåverkande geopolitiska/makrohändelser, och
+    skickar en separat notis om AI:n bedömer något som relevant.
+ 6. Sparar allt till state.json (committas av workflowen) - bara de
+    tickers som faktiskt kördes den här gången uppdateras, resten
+    behåller sitt tidigare värde.
 """
 
 import json
 import logging
 import os
 
-from config import ALL_TICKERS, STATE_FILE, FETCH_NEWS_ON_CHANGE
+from config import (
+    ALL_TICKERS,
+    SWEDISH_TICKERS,
+    US_TICKERS,
+    STATE_FILE,
+    FETCH_NEWS_ON_CHANGE,
+    CHECK_GEOPOLITICAL_NEWS,
+    GEOPOLITICAL_SEEN_CAP,
+)
 from analysis import analyze_ticker
 from scoring import compute_composite_score
-from news import get_recent_headlines, format_headlines_for_message
-from llm_explain import get_ai_analysis
+from news import get_recent_headlines, format_headlines_for_message, get_market_headlines
+from llm_explain import get_ai_analysis, get_geopolitical_analysis
 from notify import send_notification
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -45,6 +61,8 @@ PRIORITY_BY_LABEL = {
     "STRONG SELL": 5,
 }
 
+GEOPOLITICAL_SEEN_KEY = "_geopolitical_seen"
+
 
 def load_state() -> dict:
     if os.path.exists(STATE_FILE):
@@ -56,6 +74,18 @@ def load_state() -> dict:
 def save_state(state: dict) -> None:
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2, ensure_ascii=False)
+
+
+def get_tickers_for_this_run() -> list[str]:
+    market_filter = os.environ.get("MARKET_FILTER", "ALL").upper()
+    if market_filter == "SE":
+        logger.info("MARKET_FILTER=SE - kör bara svenska aktier.")
+        return SWEDISH_TICKERS
+    if market_filter == "US":
+        logger.info("MARKET_FILTER=US - kör bara amerikanska aktier.")
+        return US_TICKERS
+    logger.info("MARKET_FILTER=ALL (eller ej satt) - kör alla aktier.")
+    return ALL_TICKERS
 
 
 def build_message(old_label: str | None, score_result, news_text: str, ai_analysis: dict | None) -> str:
@@ -82,12 +112,11 @@ def build_message(old_label: str | None, score_result, news_text: str, ai_analys
     return "\n".join(parts)
 
 
-def main() -> None:
-    old_state = load_state()
-    new_state = {}
+def run_ticker_analysis(state: dict) -> int:
+    """Analyserar den här körningens tickers och returnerar antal skickade notiser."""
     notified = 0
 
-    for ticker in ALL_TICKERS:
+    for ticker in get_tickers_for_this_run():
         result = analyze_ticker(ticker)
         if result is None:
             continue
@@ -103,11 +132,11 @@ def main() -> None:
             analyst_signal=result["analyst_signal"],
         )
 
-        old_entry = old_state.get(ticker, {})
+        old_entry = state.get(ticker, {})
         old_label = old_entry.get("label")
-        is_first_run = ticker not in old_state
+        is_first_run = ticker not in state
 
-        new_state[ticker] = {
+        state[ticker] = {
             "label": score_result.label,
             "score": score_result.total_score,
         }
@@ -121,7 +150,6 @@ def main() -> None:
         if is_first_run or old_label == score_result.label:
             continue
 
-        # Signalen har ändrats -> bygg och skicka notis
         news_text = ""
         if FETCH_NEWS_ON_CHANGE:
             headlines = get_recent_headlines(ticker)
@@ -141,10 +169,49 @@ def main() -> None:
         )
         notified += 1
 
+    return notified
+
+
+def run_geopolitical_check(state: dict) -> None:
+    """Kollar breda marknadsnyheter efter genuint marknadspåverkande händelser."""
+    if not CHECK_GEOPOLITICAL_NEWS:
+        return
+
+    headlines = get_market_headlines()
+    if not headlines:
+        return
+
+    seen_titles = set(state.get(GEOPOLITICAL_SEEN_KEY, []))
+    new_headlines = [h for h in headlines if h["title"] not in seen_titles]
+
+    if new_headlines:
+        analysis = get_geopolitical_analysis(new_headlines)
+        if analysis and analysis.get("relevant") and analysis.get("summary"):
+            send_notification(
+                title="⚠️ Möjlig marknadspåverkande händelse",
+                message=analysis["summary"],
+                priority=4,
+                tags=["warning"],
+            )
+        elif analysis is None:
+            logger.info("Ingen AI-nyckel eller anropet misslyckades - hoppar över geopolitisk bedömning.")
+
+    # Uppdatera vad vi sett, oavsett om något bedömdes relevant eller ej,
+    # så vi inte frågar AI:n om samma rubriker om och om igen.
+    all_titles = seen_titles.union(h["title"] for h in headlines)
+    state[GEOPOLITICAL_SEEN_KEY] = list(all_titles)[-GEOPOLITICAL_SEEN_CAP:]
+
+
+def main() -> None:
+    state = load_state()  # vi bygger vidare på detta - inte en tom dict
+
+    notified = run_ticker_analysis(state)
+    run_geopolitical_check(state)
+
     if notified == 0:
         logger.info("Inga signalförändringar denna körning.")
 
-    save_state(new_state)
+    save_state(state)
 
 
 if __name__ == "__main__":
