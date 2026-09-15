@@ -72,3 +72,23 @@ def format_headlines_for_message(headlines: list[dict]) -> str:
         line = f"• {h['title']} ({h['publisher']})"
         lines.append(line)
     return "\n".join(lines)
+
+
+def get_market_headlines(max_items: int = None) -> list[dict]:
+    """
+    Hämtar färska rubriker kopplade till breda marknadsindex
+    (t.ex. S&P 500, OMX Stockholm 30) istället för en enskild aktie -
+    används för att fånga upp geopolitiska/makrohändelser som kan
+    påverka hela marknaden, inte bara ett enskilt bolag.
+    """
+    max_items = max_items or cfg.GEOPOLITICAL_NEWS_MAX_ITEMS
+    combined: list[dict] = []
+    seen_titles = set()
+
+    for index_ticker in cfg.MARKET_INDEX_TICKERS:
+        for headline in get_recent_headlines(index_ticker, max_items=max_items):
+            if headline["title"] not in seen_titles:
+                seen_titles.add(headline["title"])
+                combined.append(headline)
+
+    return combined[: max_items * len(cfg.MARKET_INDEX_TICKERS)]
