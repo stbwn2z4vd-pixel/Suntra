@@ -1,7 +1,7 @@
 {
   "ERIC-B.ST": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "VOLV-B.ST": {
     "label": "BUY",
@@ -20,16 +20,16 @@
     "score": 0
   },
   "SAND.ST": {
-    "label": "SELL",
-    "score": -2
+    "label": "HOLD",
+    "score": -1
   },
   "SEB-A.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "SWED-A.ST": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "HM-B.ST": {
     "label": "HOLD",
@@ -101,15 +101,15 @@
   },
   "AZN.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "HEXA-B.ST": {
     "label": "HOLD",
     "score": 0
   },
   "EPI-A.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "EPI-B.ST": {
     "label": "HOLD",
@@ -137,7 +137,7 @@
   },
   "NIBE-B.ST": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "KINV-B.ST": {
     "label": "HOLD",
@@ -145,7 +145,7 @@
   },
   "INDU-C.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": -1
   },
   "LATO-B.ST": {
     "label": "HOLD",
@@ -153,11 +153,11 @@
   },
   "EQT.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "SAGA-B.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "FABG.ST": {
     "label": "HOLD",
@@ -169,7 +169,7 @@
   },
   "WALL-B.ST": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "SCA-B.ST": {
     "label": "HOLD",
@@ -184,8 +184,8 @@
     "score": 0
   },
   "ALIV-SDB.ST": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "BEIJ-B.ST": {
     "label": "HOLD",
@@ -193,7 +193,7 @@
   },
   "INDT.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": -1
   },
   "LIFCO-B.ST": {
     "label": "BUY",
@@ -217,7 +217,7 @@
   },
   "BILI-A.ST": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "EKTA-B.ST": {
     "label": "HOLD",
@@ -229,7 +229,7 @@
   },
   "SSAB-B.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": -1
   },
   "HOLM-B.ST": {
     "label": "HOLD",
@@ -396,29 +396,36 @@
     "score": 0
   },
   "_geopolitical_seen": [
-    "Seagate Technology (STX): The Primary Beneficiary of the AI Driven HDD Demand",
-    "BE Stock Falls Most In Nearly A Month: Why This Analyst Sees Over 36% Upside",
-    "3 Reasons We Love Kirby (KEX)",
-    "10-year Treasuries cross above 5%, but are other market risks showing up?",
+    "Neuraxis Gains Nearly 137% in a Year: What's Driving the Stock?",
     "Stock Market Today: Dow Dives, This Loan Play Craters; Bessent Says This On Trump Payments (Live Coverage)",
-    "Dow, S&P 500, Nasdaq Futures Mixed Ahead Of Fed Rate Decision As AI Uncertainty Mounts: IOVA, PLAY, ELMT, RBLX Stocks In Focus",
+    "3 Reasons GIS is Risky and 1 Stock to Buy Instead",
+    "This Index Fund Could Turn $25,000 Into $20,635,655",
     "Wells Fargo Delivers Stark Warning as S&P 500 Could Drop 10%",
     "Western Digital (WDC): The Fund’s Top Relative Contributor",
-    "2 Reasons to Watch COST and 1 to Stay Cautious",
-    "AI Safety Fears Drive Investors to J&J, Costco, and CrowdStrike for Cybersecurity",
-    "Neuraxis Gains Nearly 137% in a Year: What's Driving the Stock?",
-    "Bessent grilled on the claim that ‘K-shaped economy is over’",
-    "Why Did CRWD, ELMT, OKTA Stocks Surge To 52-Week Highs Today?",
-    "Update: US Equity Indexes Drop as 10-Year Yield Hits 19-Year High, Crude Oil Prices Surge",
     "3 Reasons to Sell KE and 1 Stock to Buy Instead",
-    "Global shares fall as Treasury yields scale fresh peaks",
-    "Applied Materials Stock Already Fell Without A Shock, So What Would A Real One Do?",
-    "Stocks could have a tough road ahead if the Fed hikes rates: Chart of the Day",
-    "This Index Fund Could Turn $25,000 Into $20,635,655",
-    "Why rising long-term yields can matter more than the next Fed hike",
-    "How a Fed rate hike would affect your bank accounts, loans, credit cards, and investments",
-    "CSBR Stock Slips Post Q1 Earnings Despite Revenue, Margin Growth",
     "Chipotle Falls 5%: Profit Taking After a Strong Month, or the Salmonella Headline Again?",
-    "Dow, S&P 500 and Nasdaq Fall Ahead of Fed Decision"
+    "Federal Reserve interest rate hikes usually pound stocks, but then something surprising happens",
+    "2 Reasons to Watch COST and 1 to Stay Cautious",
+    "Update: US Equity Indexes Drop as 10-Year Yield Hits 19-Year High, Crude Oil Prices Surge",
+    "Why Did CRWD, ELMT, OKTA Stocks Surge To 52-Week Highs Today?",
+    "Dow, S&P 500, Nasdaq Futures Mixed Ahead Of Fed Rate Decision As AI Uncertainty Mounts: IOVA, PLAY, ELMT, RBLX Stocks In Focus",
+    "Applied Materials Stock Already Fell Without A Shock, So What Would A Real One Do?",
+    "3 Reasons SYF Has Explosive Upside Potential",
+    "Hormel Foods (HRL): Buy, Sell, or Hold Post Q2 Earnings?",
+    "Stocks could have a tough road ahead if the Fed hikes rates: Chart of the Day",
+    "Global shares fall as Treasury yields scale fresh peaks",
+    "Inverse Equity ETFs to Consider Amid Rising Market Risks",
+    "Why rising long-term yields can matter more than the next Fed hike",
+    "Dow, S&P 500 and Nasdaq Fall Ahead of Fed Decision",
+    "AI Safety Fears Drive Investors to J&J, Costco, and CrowdStrike for Cybersecurity",
+    "BE Stock Falls Most In Nearly A Month: Why This Analyst Sees Over 36% Upside",
+    "How a Fed rate hike would affect your bank accounts, loans, credit cards, and investments",
+    "What History Reveals About Stock Market Crashes During Presidential Transitions",
+    "3 Reasons We Love Kirby (KEX)",
+    "Why Cipher Digital Stock Is Skyrocketing Today",
+    "10-year Treasuries cross above 5%, but are other market risks showing up?",
+    "Bessent grilled on the claim that ‘K-shaped economy is over’",
+    "CSBR Stock Slips Post Q1 Earnings Despite Revenue, Margin Growth",
+    "Seagate Technology (STX): The Primary Beneficiary of the AI Driven HDD Demand"
   ]
 }
