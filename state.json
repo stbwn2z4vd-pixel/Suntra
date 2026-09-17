@@ -64,16 +64,16 @@
     "score": 3
   },
   "MSFT": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "GOOGL": {
     "label": "BUY",
     "score": 4
   },
   "AMZN": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "NVDA": {
     "label": "BUY",
@@ -88,8 +88,8 @@
     "score": 3
   },
   "BRK-B": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "JPM": {
     "label": "BUY",
@@ -236,12 +236,12 @@
     "score": 0
   },
   "AVGO": {
-    "label": "HOLD",
-    "score": 1
-  },
-  "LLY": {
     "label": "BUY",
     "score": 2
+  },
+  "LLY": {
+    "label": "HOLD",
+    "score": 1
   },
   "WMT": {
     "label": "BUY",
@@ -277,15 +277,15 @@
   },
   "PG": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "JNJ": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "BAC": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "ABBV": {
     "label": "BUY",
@@ -309,15 +309,15 @@
   },
   "CSCO": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "PEP": {
     "label": "HOLD",
     "score": 0
   },
   "MRK": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "MCD": {
     "label": "BUY",
@@ -328,8 +328,8 @@
     "score": -1
   },
   "WFC": {
-    "label": "BUY",
-    "score": 4
+    "label": "HOLD",
+    "score": 0
   },
   "DIS": {
     "label": "HOLD",
@@ -349,7 +349,7 @@
   },
   "INTC": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "TXN": {
     "label": "BUY",
@@ -357,7 +357,7 @@
   },
   "VZ": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "T": {
     "label": "HOLD",
@@ -368,12 +368,12 @@
     "score": -1
   },
   "HON": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 4
   },
   "BA": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "CAT": {
     "label": "BUY",
@@ -381,7 +381,7 @@
   },
   "GS": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "MS": {
     "label": "BUY",
@@ -392,54 +392,61 @@
     "score": 2
   },
   "UNP": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 2
   },
   "_geopolitical_seen": [
-    "Dow, S&P 500 and Nasdaq Fall Ahead of Fed Decision",
-    "Inverse Equity ETFs to Consider Amid Rising Market Risks",
-    "Why rising long-term yields can matter more than the next Fed hike",
-    "This Index Fund Could Turn $25,000 Into $20,635,655",
-    "3 Reasons We Love Kirby (KEX)",
-    "Western Digital (WDC): The Fund’s Top Relative Contributor",
-    "Bessent grilled on the claim that ‘K-shaped economy is over’",
-    "Stocks Rebound as Jobless Claims Hit 57-Year Low",
-    "Stock Market Today: Indexes Turn South After Fed Hikes Rates By Quarter Point (Live Coverage)",
-    "Chipotle Falls 5%: Profit Taking After a Strong Month, or the Salmonella Headline Again?",
-    "S&P 500 and Nasdaq Jump After Fed Delivers First Rate Hike in Years",
-    "AI Safety Fears Drive Investors to J&J, Costco, and CrowdStrike for Cybersecurity",
-    "Seagate Technology (STX): The Primary Beneficiary of the AI Driven HDD Demand",
-    "Hormel Foods (HRL): Buy, Sell, or Hold Post Q2 Earnings?",
-    "Update: US Equity Indexes Drop as 10-Year Yield Hits 19-Year High, Crude Oil Prices Surge",
-    "Dow Falls 700 Points, S&P 500 Slides",
-    "Wells Fargo Delivers Stark Warning as S&P 500 Could Drop 10%",
-    "2 Reasons Lucid Stock Is Soaring",
-    "CSBR Stock Slips Post Q1 Earnings Despite Revenue, Margin Growth",
-    "10-year Treasuries cross above 5%, but are other market risks showing up?",
-    "Applied Materials Stock Already Fell Without A Shock, So What Would A Real One Do?",
-    "Why Cipher Digital Stock Is Skyrocketing Today",
-    "Should You Buy Netflix Stock Because Its Earnings Outrun Its Sales?",
-    "What History Reveals About Stock Market Crashes During Presidential Transitions",
-    "Stock market today: Dow sinks 600 points, S&P 500 and Nasdaq fall as Fed hikes rates, bond yields rise",
-    "Democrat Sweep Odds Just Hit a Record 60%. History Says This Is Exactly When Midterm-Year Stock Drawdowns Happen.",
-    "BE Stock Falls Most In Nearly A Month: Why This Analyst Sees Over 36% Upside",
-    "Global shares fall as Treasury yields scale fresh peaks",
+    "Dow, S&P 500, Nasdaq Futures Mixed Ahead Of Fed Rate Decision As AI Uncertainty Mounts: IOVA, PLAY, ELMT, RBLX Stocks In Focus",
     "2 Reasons to Watch COST and 1 to Stay Cautious",
-    "Fed’s Warsh Says Interest Rates Aren’t Holding Economy Back",
-    "Neuraxis Gains Nearly 137% in a Year: What's Driving the Stock?",
-    "3 Reasons GIS is Risky and 1 Stock to Buy Instead",
-    "Stock Market Today: Nasdaq Leads Charge After Fed Day; Nvidia, Amazon Rise (Live Coverage)",
-    "The Fed's Hawkish Pivot Didn't Fix The 10-Year Yield; S&P 500 Slides",
-    "3 Reasons SYF Has Explosive Upside Potential",
-    "Does Fidelity or iShares Have the Better Healthcare ETF For Investors Seeking Broad Exposure?",
-    "How a Fed rate hike would affect your bank accounts, loans, credit cards, and investments",
-    "Stock market today: Dow, S&P 500, Nasdaq fall as 10-year Treasury yield touches 2007 high ahead of Fed decision day",
-    "Why Did CRWD, ELMT, OKTA Stocks Surge To 52-Week Highs Today?",
     "Stock Market Today: Dow Dives, This Loan Play Craters; Bessent Says This On Trump Payments (Live Coverage)",
-    "G Stock Rises 24.8% in 3 Months: Here's What You Should Know",
-    "3 Reasons to Sell KE and 1 Stock to Buy Instead",
-    "Stocks could have a tough road ahead if the Fed hikes rates: Chart of the Day",
+    "Stock market today: Dow sinks 600 points, S&P 500 and Nasdaq fall as Fed hikes rates, bond yields rise",
+    "S&P 500 and Nasdaq Jump After Fed Delivers First Rate Hike in Years",
+    "CSBR Stock Slips Post Q1 Earnings Despite Revenue, Margin Growth",
+    "Stocks Rebound as Jobless Claims Hit 57-Year Low",
+    "Dow, S&P 500 and Nasdaq Fall Ahead of Fed Decision",
+    "Applied Materials Stock Already Fell Without A Shock, So What Would A Real One Do?",
+    "Bessent grilled on the claim that ‘K-shaped economy is over’",
+    "Update: US Equity Indexes Rise as Fed's Commitment to Controlling Inflation Sinks Treasury Yields",
+    "Wells Fargo Delivers Stark Warning as S&P 500 Could Drop 10%",
     "Federal Reserve interest rate hikes usually pound stocks, but then something surprising happens",
-    "Dow, S&P 500, Nasdaq Futures Mixed Ahead Of Fed Rate Decision As AI Uncertainty Mounts: IOVA, PLAY, ELMT, RBLX Stocks In Focus"
+    "Hormel Foods (HRL): Buy, Sell, or Hold Post Q2 Earnings?",
+    "Democrat Sweep Odds Just Hit a Record 60%. History Says This Is Exactly When Midterm-Year Stock Drawdowns Happen.",
+    "Have markets finally found the 'right level' of interest rates?",
+    "BE Stock Falls Most In Nearly A Month: Why This Analyst Sees Over 36% Upside",
+    "Why Cipher Digital Stock Is Skyrocketing Today",
+    "3 Reasons GIS is Risky and 1 Stock to Buy Instead",
+    "As the Stock Market Flashes a Warning Seen Only 2 Times in 155 Years, Warren Buffett has a Big Warning for Investors",
+    "Stock market today: Dow, S&P 500, Nasdaq fall as 10-year Treasury yield touches 2007 high ahead of Fed decision day",
+    "Global shares fall as Treasury yields scale fresh peaks",
+    "3 Reasons We Love Kirby (KEX)",
+    "2 Reasons to Avoid SIGI and 1 Stock to Buy Instead",
+    "Western Digital (WDC): The Fund’s Top Relative Contributor",
+    "Dow Falls 700 Points, S&P 500 Slides",
+    "Stock Market Today: Indexes Turn South After Fed Hikes Rates By Quarter Point (Live Coverage)",
+    "Stock Market Today: Nasdaq Retakes Key Level; Ad Platform Provider Hits Highs (Live Coverage)",
+    "2 Reasons Lucid Stock Is Soaring",
+    "This Index Fund Could Turn $25,000 Into $20,635,655",
+    "10-year Treasuries cross above 5%, but are other market risks showing up?",
+    "Fed’s Warsh Says Interest Rates Aren’t Holding Economy Back",
+    "3 Reasons to Avoid IP and 1 Stock to Buy Instead",
+    "Seagate Technology (STX): The Primary Beneficiary of the AI Driven HDD Demand",
+    "Update: US Equity Indexes Drop as 10-Year Yield Hits 19-Year High, Crude Oil Prices Surge",
+    "Inverse Equity ETFs to Consider Amid Rising Market Risks",
+    "What History Reveals About Stock Market Crashes During Presidential Transitions",
+    "Neuraxis Gains Nearly 137% in a Year: What's Driving the Stock?",
+    "3 Reasons SYF Has Explosive Upside Potential",
+    "3 Reasons to Sell KE and 1 Stock to Buy Instead",
+    "Yardeni on Cutting His S&P Outlook, Fed, Oil Prices",
+    "AI Safety Fears Drive Investors to J&J, Costco, and CrowdStrike for Cybersecurity",
+    "Why Did CRWD, ELMT, OKTA Stocks Surge To 52-Week Highs Today?",
+    "Does Fidelity or iShares Have the Better Healthcare ETF For Investors Seeking Broad Exposure?",
+    "G Stock Rises 24.8% in 3 Months: Here's What You Should Know",
+    "Should You Buy Netflix Stock Because Its Earnings Outrun Its Sales?",
+    "Stock Market Today: Nasdaq Leads Charge After Fed Day; Nvidia, Amazon Rise (Live Coverage)",
+    "Chipotle Falls 5%: Profit Taking After a Strong Month, or the Salmonella Headline Again?",
+    "Why rising long-term yields can matter more than the next Fed hike",
+    "How a Fed rate hike would affect your bank accounts, loans, credit cards, and investments",
+    "The Fed's Hawkish Pivot Didn't Fix The 10-Year Yield; S&P 500 Slides",
+    "Stocks could have a tough road ahead if the Fed hikes rates: Chart of the Day"
   ]
 }
