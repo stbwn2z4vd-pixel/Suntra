@@ -60,8 +60,8 @@
     "score": 0
   },
   "AAPL": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "MSFT": {
     "label": "BUY",
@@ -72,24 +72,24 @@
     "score": 0
   },
   "AMZN": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "NVDA": {
     "label": "BUY",
     "score": 3
   },
   "META": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": -1
   },
   "TSLA": {
     "label": "HOLD",
     "score": 1
   },
   "BRK-B": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "JPM": {
     "label": "BUY",
@@ -237,11 +237,11 @@
   },
   "AVGO": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "LLY": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "WMT": {
     "label": "HOLD",
@@ -256,12 +256,12 @@
     "score": 1
   },
   "XOM": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "ORCL": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "COST": {
     "label": "BUY",
@@ -277,7 +277,7 @@
   },
   "PG": {
     "label": "HOLD",
-    "score": 0
+    "score": -1
   },
   "JNJ": {
     "label": "BUY",
@@ -305,7 +305,7 @@
   },
   "AMD": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "CSCO": {
     "label": "BUY",
@@ -336,8 +336,8 @@
     "score": 2
   },
   "NKE": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 0
   },
   "IBM": {
     "label": "HOLD",
@@ -353,7 +353,7 @@
   },
   "TXN": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "VZ": {
     "label": "BUY",
@@ -377,23 +377,23 @@
   },
   "CAT": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "GS": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "MS": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "AXP": {
     "label": "BUY",
     "score": 2
   },
   "UNP": {
-    "label": "BUY",
-    "score": 2
+    "label": "STRONG BUY",
+    "score": 5
   },
   "_geopolitical_seen": [
     "Looking for consumer and investor sentiment trends? Turn to social media.",
