@@ -5,7 +5,7 @@
   },
   "VOLV-B.ST": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "ATCO-A.ST": {
     "label": "BUY",
@@ -37,15 +37,15 @@
   },
   "ASSA-B.ST": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "ALFA.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "SKF-B.ST": {
-    "label": "HOLD",
-    "score": -1
+    "label": "BUY",
+    "score": 2
   },
   "TELIA.ST": {
     "label": "HOLD",
@@ -109,19 +109,19 @@
   },
   "EPI-A.ST": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "EPI-B.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "SHB-A.ST": {
-    "label": "HOLD",
-    "score": -1
+    "label": "SELL",
+    "score": -2
   },
   "SKA-B.ST": {
-    "label": "BUY",
-    "score": 3
+    "label": "HOLD",
+    "score": 1
   },
   "GETI-B.ST": {
     "label": "BUY",
@@ -137,7 +137,7 @@
   },
   "NIBE-B.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "KINV-B.ST": {
     "label": "BUY",
@@ -145,7 +145,7 @@
   },
   "INDU-C.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "LATO-B.ST": {
     "label": "HOLD",
@@ -176,8 +176,8 @@
     "score": 2
   },
   "HUSQ-B.ST": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 3
   },
   "ELUX-B.ST": {
     "label": "HOLD",
@@ -201,35 +201,35 @@
   },
   "ADDT-B.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "SWEC-B.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "AXFO.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 0
   },
   "TEL2-B.ST": {
     "label": "HOLD",
     "score": -1
   },
   "BILI-A.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 0
   },
   "EKTA-B.ST": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "TREL-B.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "SSAB-B.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": -1
   },
   "HOLM-B.ST": {
     "label": "HOLD",
