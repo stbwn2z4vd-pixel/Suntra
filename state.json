@@ -65,11 +65,11 @@
   },
   "MSFT": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "GOOGL": {
-    "label": "BUY",
-    "score": 4
+    "label": "STRONG BUY",
+    "score": 5
   },
   "AMZN": {
     "label": "BUY",
@@ -81,11 +81,11 @@
   },
   "META": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "TSLA": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 3
   },
   "BRK-B": {
     "label": "HOLD",
@@ -241,11 +241,11 @@
   },
   "LLY": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "WMT": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "MA": {
     "label": "HOLD",
@@ -256,12 +256,12 @@
     "score": 4
   },
   "XOM": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 4
   },
   "ORCL": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "COST": {
     "label": "BUY",
@@ -273,7 +273,7 @@
   },
   "HD": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "PG": {
     "label": "HOLD",
@@ -281,7 +281,7 @@
   },
   "JNJ": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "BAC": {
     "label": "BUY",
@@ -301,15 +301,15 @@
   },
   "CRM": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "AMD": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "CSCO": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "PEP": {
     "label": "HOLD",
@@ -325,7 +325,7 @@
   },
   "ADBE": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "WFC": {
     "label": "BUY",
@@ -337,7 +337,7 @@
   },
   "NKE": {
     "label": "HOLD",
-    "score": 0
+    "score": -1
   },
   "IBM": {
     "label": "HOLD",
@@ -349,7 +349,7 @@
   },
   "INTC": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "TXN": {
     "label": "BUY",
@@ -385,11 +385,11 @@
   },
   "MS": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "AXP": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 4
   },
   "UNP": {
     "label": "STRONG BUY",
