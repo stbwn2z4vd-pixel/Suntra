@@ -65,7 +65,7 @@
   },
   "MSFT": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "GOOGL": {
     "label": "BUY",
@@ -73,7 +73,7 @@
   },
   "AMZN": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "NVDA": {
     "label": "HOLD",
@@ -85,11 +85,11 @@
   },
   "TSLA": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "BRK-B": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "JPM": {
     "label": "STRONG BUY",
@@ -249,7 +249,7 @@
   },
   "MA": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "UNH": {
     "label": "BUY",
@@ -257,31 +257,31 @@
   },
   "XOM": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "ORCL": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 4
   },
   "COST": {
     "label": "BUY",
     "score": 2
   },
   "NFLX": {
-    "label": "STRONG BUY",
-    "score": 5
+    "label": "BUY",
+    "score": 4
   },
   "HD": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "PG": {
     "label": "BUY",
     "score": 2
   },
   "JNJ": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "BAC": {
     "label": "STRONG BUY",
@@ -289,7 +289,7 @@
   },
   "ABBV": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "KO": {
     "label": "BUY",
@@ -300,12 +300,12 @@
     "score": 4
   },
   "CRM": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "AMD": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "CSCO": {
     "label": "BUY",
@@ -320,24 +320,24 @@
     "score": 2
   },
   "MCD": {
-    "label": "STRONG BUY",
-    "score": 5
+    "label": "BUY",
+    "score": 4
   },
   "ADBE": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "WFC": {
-    "label": "BUY",
-    "score": 4
+    "label": "STRONG BUY",
+    "score": 5
   },
   "DIS": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "NKE": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "IBM": {
     "label": "BUY",
@@ -345,7 +345,7 @@
   },
   "QCOM": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "INTC": {
     "label": "BUY",
@@ -353,7 +353,7 @@
   },
   "TXN": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "VZ": {
     "label": "BUY",
@@ -364,12 +364,12 @@
     "score": 2
   },
   "CMCSA": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 3
   },
   "HON": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "BA": {
     "label": "BUY",
