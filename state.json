@@ -68,20 +68,20 @@
     "score": 3
   },
   "GOOGL": {
-    "label": "BUY",
-    "score": 4
+    "label": "HOLD",
+    "score": 1
   },
   "AMZN": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "NVDA": {
     "label": "BUY",
     "score": 2
   },
   "META": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "TSLA": {
     "label": "HOLD",
@@ -257,27 +257,27 @@
   },
   "XOM": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "ORCL": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "COST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "NFLX": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "HD": {
     "label": "HOLD",
     "score": 1
   },
   "PG": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "JNJ": {
     "label": "BUY",
@@ -289,7 +289,7 @@
   },
   "ABBV": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "KO": {
     "label": "BUY",
@@ -297,7 +297,7 @@
   },
   "CVX": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "CRM": {
     "label": "BUY",
@@ -305,15 +305,15 @@
   },
   "AMD": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "CSCO": {
-    "label": "BUY",
-    "score": 3
+    "label": "HOLD",
+    "score": 1
   },
   "PEP": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "MRK": {
     "label": "BUY",
@@ -325,7 +325,7 @@
   },
   "ADBE": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "WFC": {
     "label": "BUY",
@@ -356,16 +356,16 @@
     "score": 1
   },
   "VZ": {
-    "label": "BUY",
-    "score": 2
+    "label": "STRONG BUY",
+    "score": 5
   },
   "T": {
     "label": "BUY",
     "score": 2
   },
   "CMCSA": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "HON": {
     "label": "BUY",
