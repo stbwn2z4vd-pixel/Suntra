@@ -1,7 +1,7 @@
 {
   "ERIC-B.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "VOLV-B.ST": {
     "label": "BUY",
@@ -9,11 +9,11 @@
   },
   "ATCO-A.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "ATCO-B.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "INVE-B.ST": {
     "label": "HOLD",
@@ -44,8 +44,8 @@
     "score": 2
   },
   "SKF-B.ST": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 2
   },
   "TELIA.ST": {
     "label": "HOLD",
@@ -57,7 +57,7 @@
   },
   "ESSITY-B.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "AAPL": {
     "label": "BUY",
@@ -101,19 +101,19 @@
   },
   "AZN.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "HEXA-B.ST": {
     "label": "BUY",
     "score": 3
   },
   "EPI-A.ST": {
-    "label": "BUY",
-    "score": 4
+    "label": "HOLD",
+    "score": 1
   },
   "EPI-B.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "SHB-A.ST": {
     "label": "HOLD",
@@ -129,23 +129,23 @@
   },
   "BOL.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "EVO.ST": {
     "label": "HOLD",
     "score": 0
   },
   "NIBE-B.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "KINV-B.ST": {
-    "label": "BUY",
-    "score": 4
+    "label": "HOLD",
+    "score": 1
   },
   "INDU-C.ST": {
-    "label": "HOLD",
-    "score": -1
+    "label": "BUY",
+    "score": 3
   },
   "LATO-B.ST": {
     "label": "HOLD",
@@ -161,11 +161,11 @@
   },
   "FABG.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "CAST.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "WALL-B.ST": {
     "label": "HOLD",
@@ -173,7 +173,7 @@
   },
   "SCA-B.ST": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "HUSQ-B.ST": {
     "label": "HOLD",
@@ -185,7 +185,7 @@
   },
   "ALIV-SDB.ST": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "BEIJ-B.ST": {
     "label": "BUY",
@@ -193,7 +193,7 @@
   },
   "INDT.ST": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "LIFCO-B.ST": {
     "label": "BUY",
@@ -208,8 +208,8 @@
     "score": 2
   },
   "AXFO.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "TEL2-B.ST": {
     "label": "HOLD",
@@ -217,15 +217,15 @@
   },
   "BILI-A.ST": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "EKTA-B.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "TREL-B.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "SSAB-B.ST": {
     "label": "BUY",
