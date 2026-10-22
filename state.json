@@ -60,12 +60,12 @@
     "score": 1
   },
   "AAPL": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 3
   },
   "MSFT": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 2
   },
   "GOOGL": {
     "label": "BUY",
@@ -76,8 +76,8 @@
     "score": 3
   },
   "NVDA": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "META": {
     "label": "BUY",
@@ -85,7 +85,7 @@
   },
   "TSLA": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "BRK-B": {
     "label": "BUY",
@@ -241,11 +241,11 @@
   },
   "LLY": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "WMT": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "MA": {
     "label": "BUY",
@@ -253,7 +253,7 @@
   },
   "UNH": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "XOM": {
     "label": "BUY",
@@ -272,12 +272,12 @@
     "score": 1
   },
   "HD": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "PG": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "JNJ": {
     "label": "BUY",
@@ -293,7 +293,7 @@
   },
   "KO": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "CVX": {
     "label": "BUY",
@@ -316,16 +316,16 @@
     "score": 0
   },
   "MRK": {
-    "label": "BUY",
-    "score": 4
+    "label": "STRONG BUY",
+    "score": 5
   },
   "MCD": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "ADBE": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "WFC": {
     "label": "BUY",
@@ -340,8 +340,8 @@
     "score": 0
   },
   "IBM": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "QCOM": {
     "label": "HOLD",
@@ -352,12 +352,12 @@
     "score": 2
   },
   "TXN": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "VZ": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "T": {
     "label": "BUY",
@@ -365,7 +365,7 @@
   },
   "CMCSA": {
     "label": "HOLD",
-    "score": 1
+    "score": -1
   },
   "HON": {
     "label": "BUY",
@@ -373,15 +373,15 @@
   },
   "BA": {
     "label": "BUY",
-    "score": 2
+    "score": 4
   },
   "CAT": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "GS": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "MS": {
     "label": "STRONG BUY",
@@ -393,7 +393,7 @@
   },
   "UNP": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "_geopolitical_seen": [
     "Looking for consumer and investor sentiment trends? Turn to social media.",
