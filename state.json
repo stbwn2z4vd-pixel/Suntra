@@ -64,12 +64,12 @@
     "score": 4
   },
   "MSFT": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "GOOGL": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "AMZN": {
     "label": "HOLD",
@@ -84,8 +84,8 @@
     "score": 2
   },
   "TSLA": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "BRK-B": {
     "label": "BUY",
@@ -93,11 +93,11 @@
   },
   "JPM": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "V": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "AZN.ST": {
     "label": "BUY",
@@ -244,12 +244,12 @@
     "score": 3
   },
   "WMT": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "MA": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "UNH": {
     "label": "BUY",
@@ -268,8 +268,8 @@
     "score": 2
   },
   "NFLX": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "HD": {
     "label": "BUY",
@@ -281,11 +281,11 @@
   },
   "JNJ": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "BAC": {
-    "label": "BUY",
-    "score": 3
+    "label": "STRONG BUY",
+    "score": 6
   },
   "ABBV": {
     "label": "BUY",
@@ -316,12 +316,12 @@
     "score": 0
   },
   "MRK": {
-    "label": "BUY",
-    "score": 3
-  },
-  "MCD": {
     "label": "HOLD",
     "score": 1
+  },
+  "MCD": {
+    "label": "BUY",
+    "score": 2
   },
   "ADBE": {
     "label": "HOLD",
@@ -337,7 +337,7 @@
   },
   "NKE": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "IBM": {
     "label": "HOLD",
@@ -352,20 +352,20 @@
     "score": 2
   },
   "TXN": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 4
   },
   "VZ": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "T": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "CMCSA": {
     "label": "HOLD",
-    "score": -1
+    "score": 1
   },
   "HON": {
     "label": "BUY",
@@ -381,11 +381,11 @@
   },
   "GS": {
     "label": "BUY",
-    "score": 2
+    "score": 4
   },
   "MS": {
-    "label": "STRONG BUY",
-    "score": 5
+    "label": "BUY",
+    "score": 4
   },
   "AXP": {
     "label": "BUY",
