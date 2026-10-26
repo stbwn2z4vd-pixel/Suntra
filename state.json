@@ -9,23 +9,23 @@
   },
   "ATCO-A.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "ATCO-B.ST": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "INVE-B.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 1
   },
   "SAND.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "SEB-A.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "SWED-A.ST": {
     "label": "HOLD",
@@ -45,7 +45,7 @@
   },
   "SKF-B.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 1
   },
   "TELIA.ST": {
     "label": "HOLD",
@@ -53,7 +53,7 @@
   },
   "NDA-SE.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "ESSITY-B.ST": {
     "label": "HOLD",
@@ -104,24 +104,24 @@
     "score": 2
   },
   "HEXA-B.ST": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 2
   },
   "EPI-A.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "EPI-B.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "SHB-A.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "SKA-B.ST": {
-    "label": "STRONG BUY",
-    "score": 5
+    "label": "BUY",
+    "score": 3
   },
   "GETI-B.ST": {
     "label": "BUY",
@@ -136,24 +136,24 @@
     "score": 2
   },
   "NIBE-B.ST": {
-    "label": "BUY",
-    "score": 2
-  },
-  "KINV-B.ST": {
     "label": "HOLD",
     "score": 1
   },
+  "KINV-B.ST": {
+    "label": "BUY",
+    "score": 4
+  },
   "INDU-C.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 1
   },
   "LATO-B.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "EQT.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "SAGA-B.ST": {
     "label": "BUY",
@@ -172,12 +172,12 @@
     "score": 0
   },
   "SCA-B.ST": {
-    "label": "BUY",
-    "score": 3
+    "label": "HOLD",
+    "score": 0
   },
   "HUSQ-B.ST": {
-    "label": "SELL",
-    "score": -3
+    "label": "HOLD",
+    "score": -1
   },
   "ELUX-B.ST": {
     "label": "HOLD",
@@ -201,11 +201,11 @@
   },
   "ADDT-B.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "SWEC-B.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "AXFO.ST": {
     "label": "HOLD",
@@ -221,7 +221,7 @@
   },
   "EKTA-B.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "TREL-B.ST": {
     "label": "HOLD",
