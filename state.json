@@ -60,8 +60,8 @@
     "score": 1
   },
   "AAPL": {
-    "label": "BUY",
-    "score": 3
+    "label": "HOLD",
+    "score": 0
   },
   "MSFT": {
     "label": "HOLD",
@@ -73,11 +73,11 @@
   },
   "AMZN": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "NVDA": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "META": {
     "label": "BUY",
@@ -85,7 +85,7 @@
   },
   "TSLA": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "BRK-B": {
     "label": "BUY",
@@ -236,8 +236,8 @@
     "score": 2
   },
   "AVGO": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 3
   },
   "LLY": {
     "label": "BUY",
@@ -261,7 +261,7 @@
   },
   "ORCL": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "COST": {
     "label": "BUY",
@@ -293,7 +293,7 @@
   },
   "KO": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "CVX": {
     "label": "BUY",
@@ -332,12 +332,12 @@
     "score": 3
   },
   "DIS": {
-    "label": "BUY",
-    "score": 3
+    "label": "HOLD",
+    "score": 1
   },
   "NKE": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 2
   },
   "IBM": {
     "label": "BUY",
@@ -345,27 +345,27 @@
   },
   "QCOM": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "INTC": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "TXN": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "VZ": {
     "label": "BUY",
     "score": 4
   },
   "T": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "CMCSA": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "HON": {
     "label": "BUY",
@@ -381,7 +381,7 @@
   },
   "GS": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "MS": {
     "label": "BUY",
@@ -389,7 +389,7 @@
   },
   "AXP": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "UNP": {
     "label": "BUY",
