@@ -69,11 +69,11 @@
   },
   "GOOGL": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "AMZN": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "NVDA": {
     "label": "BUY",
@@ -85,7 +85,7 @@
   },
   "TSLA": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "BRK-B": {
     "label": "BUY",
@@ -241,7 +241,7 @@
   },
   "LLY": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "WMT": {
     "label": "BUY",
@@ -284,36 +284,36 @@
     "score": 3
   },
   "BAC": {
-    "label": "STRONG BUY",
-    "score": 6
+    "label": "BUY",
+    "score": 4
   },
   "ABBV": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "KO": {
-    "label": "BUY",
-    "score": 3
+    "label": "HOLD",
+    "score": 0
   },
   "CVX": {
     "label": "BUY",
     "score": 3
   },
   "CRM": {
-    "label": "BUY",
-    "score": 4
+    "label": "HOLD",
+    "score": 1
   },
   "AMD": {
     "label": "BUY",
     "score": 2
   },
   "CSCO": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "PEP": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "MRK": {
     "label": "HOLD",
@@ -333,51 +333,51 @@
   },
   "DIS": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "NKE": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 0
   },
   "IBM": {
-    "label": "BUY",
-    "score": 2
-  },
-  "QCOM": {
-    "label": "BUY",
-    "score": 3
-  },
-  "INTC": {
     "label": "HOLD",
     "score": 1
   },
+  "QCOM": {
+    "label": "BUY",
+    "score": 2
+  },
+  "INTC": {
+    "label": "BUY",
+    "score": 2
+  },
   "TXN": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "VZ": {
     "label": "BUY",
     "score": 4
   },
   "T": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "CMCSA": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 0
   },
   "HON": {
     "label": "BUY",
     "score": 2
   },
   "BA": {
-    "label": "BUY",
-    "score": 2
-  },
-  "CAT": {
     "label": "HOLD",
     "score": 1
+  },
+  "CAT": {
+    "label": "BUY",
+    "score": 2
   },
   "GS": {
     "label": "BUY",
@@ -389,7 +389,7 @@
   },
   "AXP": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "UNP": {
     "label": "BUY",
