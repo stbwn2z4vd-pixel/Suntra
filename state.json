@@ -64,8 +64,8 @@
     "score": 0
   },
   "MSFT": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "GOOGL": {
     "label": "BUY",
@@ -237,19 +237,19 @@
   },
   "AVGO": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "LLY": {
     "label": "BUY",
     "score": 2
   },
   "WMT": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 1
   },
   "MA": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "UNH": {
     "label": "BUY",
@@ -257,11 +257,11 @@
   },
   "XOM": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "ORCL": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "COST": {
     "label": "BUY",
@@ -284,20 +284,20 @@
     "score": 3
   },
   "BAC": {
-    "label": "BUY",
-    "score": 4
+    "label": "STRONG BUY",
+    "score": 5
   },
   "ABBV": {
     "label": "BUY",
     "score": 2
   },
   "KO": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 3
   },
   "CVX": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "CRM": {
     "label": "HOLD",
@@ -308,16 +308,16 @@
     "score": 2
   },
   "CSCO": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "PEP": {
     "label": "HOLD",
-    "score": 1
+    "score": 0
   },
   "MRK": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 4
   },
   "MCD": {
     "label": "BUY",
@@ -344,20 +344,20 @@
     "score": 1
   },
   "QCOM": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": -1
   },
   "INTC": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "TXN": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "VZ": {
     "label": "BUY",
-    "score": 4
+    "score": 3
   },
   "T": {
     "label": "HOLD",
@@ -372,8 +372,8 @@
     "score": 2
   },
   "BA": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "CAT": {
     "label": "BUY",
@@ -385,15 +385,15 @@
   },
   "MS": {
     "label": "BUY",
-    "score": 3
+    "score": 4
   },
   "AXP": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "UNP": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "_geopolitical_seen": [
     "Looking for consumer and investor sentiment trends? Turn to social media.",
