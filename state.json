@@ -1,7 +1,7 @@
 {
   "ERIC-B.ST": {
-    "label": "SELL",
-    "score": -2
+    "label": "HOLD",
+    "score": -1
   },
   "VOLV-B.ST": {
     "label": "BUY",
@@ -17,47 +17,47 @@
   },
   "INVE-B.ST": {
     "label": "HOLD",
-    "score": 1
+    "score": -1
   },
   "SAND.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 0
   },
   "SEB-A.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "SWED-A.ST": {
     "label": "HOLD",
     "score": 1
   },
   "HM-B.ST": {
-    "label": "HOLD",
-    "score": 0
+    "label": "SELL",
+    "score": -3
   },
   "ASSA-B.ST": {
-    "label": "BUY",
-    "score": 2
+    "label": "HOLD",
+    "score": 0
   },
   "ALFA.ST": {
     "label": "BUY",
     "score": 2
   },
   "SKF-B.ST": {
-    "label": "BUY",
-    "score": 3
+    "label": "HOLD",
+    "score": -1
   },
   "TELIA.ST": {
-    "label": "HOLD",
-    "score": 0
+    "label": "BUY",
+    "score": 2
   },
   "NDA-SE.ST": {
     "label": "BUY",
-    "score": 3
+    "score": 2
   },
   "ESSITY-B.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "AAPL": {
     "label": "BUY",
@@ -100,12 +100,12 @@
     "score": 0
   },
   "AZN.ST": {
-    "label": "HOLD",
-    "score": 1
+    "label": "SELL",
+    "score": -3
   },
   "HEXA-B.ST": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "EPI-A.ST": {
     "label": "HOLD",
@@ -136,24 +136,24 @@
     "score": 1
   },
   "NIBE-B.ST": {
-    "label": "BUY",
-    "score": 4
+    "label": "HOLD",
+    "score": 1
   },
   "KINV-B.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "INDU-C.ST": {
     "label": "HOLD",
     "score": 1
   },
   "LATO-B.ST": {
-    "label": "HOLD",
-    "score": 1
+    "label": "SELL",
+    "score": -2
   },
   "EQT.ST": {
-    "label": "HOLD",
-    "score": 0
+    "label": "SELL",
+    "score": -2
   },
   "SAGA-B.ST": {
     "label": "HOLD",
@@ -161,7 +161,7 @@
   },
   "FABG.ST": {
     "label": "HOLD",
-    "score": 0
+    "score": 1
   },
   "CAST.ST": {
     "label": "SELL",
@@ -176,16 +176,16 @@
     "score": 0
   },
   "HUSQ-B.ST": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "ELUX-B.ST": {
     "label": "HOLD",
-    "score": -1
+    "score": 0
   },
   "ALIV-SDB.ST": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "BEIJ-B.ST": {
     "label": "BUY",
@@ -197,7 +197,7 @@
   },
   "LIFCO-B.ST": {
     "label": "BUY",
-    "score": 2
+    "score": 3
   },
   "ADDT-B.ST": {
     "label": "BUY",
@@ -216,24 +216,24 @@
     "score": 0
   },
   "BILI-A.ST": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "EKTA-B.ST": {
     "label": "HOLD",
     "score": 1
   },
   "TREL-B.ST": {
-    "label": "HOLD",
-    "score": 1
+    "label": "BUY",
+    "score": 2
   },
   "SSAB-B.ST": {
-    "label": "BUY",
-    "score": 3
+    "label": "HOLD",
+    "score": 0
   },
   "HOLM-B.ST": {
-    "label": "BUY",
-    "score": 4
+    "label": "HOLD",
+    "score": 1
   },
   "AVGO": {
     "label": "BUY",
@@ -396,155 +396,155 @@
     "score": 1
   },
   "_geopolitical_seen": [
-    "What's dragging down the S&P 500? Apple in focus",
-    "How Much Should One Number Worry Starbucks Shareholders?",
-    "Adobe (ADBE) Is Down About 31% This Year. Here’s What Citi’s Tyler Radke Sees Next",
-    "Why Micron’s Dazzling Earnings Report Is Barely Moving the Stock",
-    "Josh Brown: Nvidia Has No “Jensen Premium” to Lose. It’s Been Cheap for 3 Years",
-    "Stock market today: Dow, S&P 500, Nasdaq notch weekly wins as market shrugs off bond sell-off, oil prices ease",
-    "Wall Street's $1.6 trillion rebound may look like a bottom — history says it often isn't: Chart of the Day",
-    "Stock Market Today, Nov. 13: AMD Sinks 8.75% on Sector AI-Chip Sell-Off After Early Gains Reverse",
-    "Stocks Slip After Rising Oil and Yields Take Away Early Morning Gains",
-    "ABM Stock Rises 12.7% in Three Months: Here's What You Should Know",
-    "Applied Materials Stock Already Fell Without A Shock, So What Would A Real One Do?",
-    "SPDW vs IXUS: Which International ETF Is the Better Buy for 2027?",
-    "Stock Market Today: Dow Gains 400 Points On U.S-Iran Peace Hopes; Micron Rises (Live Coverage)",
-    "Micron Earnings Could Be the Catalyst This Wildly Popular ETF Needs",
-    "No Margin Account? This ETF Is the Most Popular Way to Short the S&P 500",
-    "Stocks shrugged off the blue wave overnight — history says don't trust the bounce yet",
-    "2 Reasons to Avoid SIGI and 1 Stock to Buy Instead",
-    "Fund Winners and Losers: Bitcoin Battered Bonds in the Third Quarter",
-    "Dow Jones Futures: Market Needs Repair But Sandisk, Micron Broken; Apple, Amazon, Microsoft Strong",
-    "Why diesel price and Treasury yield relief would be huge wins for stocks",
-    "Why bond king Jeffrey Gundlach is steering clear of the AI 'blast radius'",
-    "Stock Market Today, Nov. 4: Amazon Jumps 6% From New Perspective on AWS Growth and AI Strategy Following Election Results",
-    "CSBR Stock Slips Post Q1 Earnings Despite Revenue, Margin Growth",
-    "Stocks had their worst day in 18 months — here's what that means for your portfolio",
-    "Dow, S&P 500 and Nasdaq Fall Ahead of Fed Decision",
-    "2 Reasons to Like CRC and 1 to Stay Skeptical",
-    "Bessent grilled on the claim that ‘K-shaped economy is over’",
-    "S&P 500, Dow, Nasdaq End Lower As Investors Hold Back Ahead Of Nvidia Earnings, Anthropic IPO This Week —  NVDA, TSLA, ANT In Focus",
-    "Why investors are rethinking their bond strategies",
-    "3 Reasons GIS is Risky and 1 Stock to Buy Instead",
-    "Stock market today: Dow, S&P 500, Nasdaq turn higher as Nvidia stock slides after CEO Jensen Huang resigns",
-    "Have markets finally found the 'right level' of interest rates?",
-    "Update: Nasdaq Composite Rallies to Record as AI Trade Lifts Chipmakers",
-    "What History Reveals About Stock Market Crashes During Presidential Transitions",
-    "Nvidia is about 6% of the S&P 500. If Jensen Huang is ousted, there’s no clear successor — could chaos hit portfolios?",
-    "Stock Market Today: Dow Wavers; Two Healthcare Names Shine In IBD 50 (Live Coverage)",
-    "Is Merck's Stock Still a Good Buy at $150?",
-    "Update: US Equity Indexes Trade Mixed Amid Higher Crude Oil, Treasury Yields",
-    "Can Dell Stock Fall 40%?",
-    "Stock Market Today, Nov. 13: Nu Holdings Surges on Record Q3 Earnings Beat Driven by Strong Revenue",
-    "BofA Raised Its Earnings Estimates but Cut Its Target on AMD (AMD), Here’s Why",
-    "Update: US Equity Indexes Drop as Robust Output Growth Galvanizes Fed Rate-Increase Bets",
-    "Analysts Just Slashed Their Price Targets on These 5 Stocks",
-    "Seagate Technology (STX): The Primary Beneficiary of the AI Driven HDD Demand",
-    "Update: US Equity Indexes Rebound, Treasury Yields Rise Following Blowout Jobs Report",
-    "Guidance Up, Trend Intact: Mettler-Toledo Is Today's Double-Confirmation Stock",
-    "History Says Investing in the Stock Market During a Bear Market Is the Smartest Move You Can Make. Here's Why.",
-    "The market is ready for a few more rate hikes",
-    "Stock market today: Nasdaq leads Dow, S&P 500 lower as chip stock sell-off accelerates",
-    "3 Reasons MHK is Risky and 1 Stock to Buy Instead",
-    "Mezzi CEO reveals if customers take wealth management advice from AI",
-    "Stock market today: Nasdaq, S&P 500, Dow rise as Nvidia stock recovers, chip stocks rally after CoreWeave earnings",
     "What Needs To Be True To Buy Qualcomm Stock Now?",
-    "Is Accenture Stock Becoming A Different Bet?",
-    "Stock Market Today, Nov. 11: Advanced Micro Devices Jumps -- and Not Only Because of CoreWeave's Results",
-    "This Index Fund Could Turn $25,000 Into $20,635,655",
-    "Update: Wall Street Notches Weekly Gains Despite Nvidia Sell-Off",
-    "Stock Market Today, Nov. 12: AMD Jumps 5.9% on Bank of America Price Target Hike to $700",
-    "$3 trillion wipe-out, CEOs on the volatility of politics, and the status of the AI trade",
-    "How Low Can First Solar Stock Go?",
-    "Why Micron Technology Stock Gained On Monday",
-    "Western Digital (WDC): The Fund’s Top Relative Contributor",
-    "Update: Chipmakers Push US Equity Indexes Higher as Treasury Yields, Crude Oil Decline",
-    "Stocks, Bonds Climb as Oil Falls on US-Iran Hopes",
-    "Wall St jumps as oil slide cools inflation worries; Nvidia slumps",
-    "What consumer confidence really says about the K-shaped economy",
-    "5 Consumer Staples Stocks Reaching New Highs as Markets Retreat",
-    "Stock Market Today: Dow Dips Amid Midterm Elections; Palantir Slips, DuPont Surges Past Entry",
-    "What Happened With Rigetti Computing Stock Yesterday?",
-    "Update: US Equity Indexes Jump as Crude Oil Slides Amid Iran's Conditional Proposal to Reopen Hormuz Chokepoint",
-    "Stock market tumbles on post-election reset",
-    "Stock Market Today: Nasdaq Sinks As Nvidia Drops; Finance Stock Jumps (Live Coverage)",
-    "Why Nvidia Stock Just Fell Again",
-    "Industrials Push Stock Indexes to Broad-Based Rally",
-    "3 Reasons MCK Has Explosive Upside Potential",
-    "Wall St edges up as AI enthusiasm eases worries over higher oil prices, yields",
-    "IonQ Is Up 3% in a Week. Is Its “Industry Record” Guidance Really That Good?",
-    "S&P 500 Posts Weekly Drop as Energy, Technology Slide in Election Aftermath",
-    "The Chinese Car Market Is Still a Mess",
-    "S&P 500 Plunges, Wall Street Fears Circuit Breaker, Just One Day After Trump Celebrated Record Highs",
-    "Dow Jones Futures: Nasdaq Dives 5.5%, Nvidia, Sandisk, CoreWeave, SpaceX Plunge, But Sell-Off Spreads Beyond AI",
-    "Stock Market Today, Nov. 4: Dow Surges 3% in Biggest Post-Midterm Rally in 44 Years",
-    "9 Green Days In A Row: nVent Electric Stock Is Up 12%",
-    "Stock Market Today: Dow Dives As Nvidia Makes Huang Decision; These AI Plays Plunge (Live Coverage)",
-    "Stock market today: Dow, S&P 500, Nasdaq slide as bond sell-off troubles markets, China's Xi Jinping lands in US",
-    "Stock Market Today: Nasdaq Slumps 4% As AI Unwinds; Qualcomm Tumbles On Soft Outlook (Live Coverage)",
-    "Dow Jones Futures: Stock Market Falls On Surging Treasury Yields, Nvidia Sell-Off; CoreWeave Rises Late",
-    "Is Chevron Stock A Real Bargain?",
-    "Can Insulet Stock Jump 50%?",
-    "Stocks Rally as Tech Rebound Continues and Hopes of a U.S.-Iran Deal Climb",
-    "Stock Market Today: Indexes Turn South After Fed Hikes Rates By Quarter Point (Live Coverage)",
-    "Is Snowflake Buying Its Growth With Its Margin?",
-    "Why Did CRWD, ELMT, OKTA Stocks Surge To 52-Week Highs Today?",
-    "Anthropic, Nvidia, CoreWeave, Take-Two, D-Wave, Securitize, and More That Explain Today’s Market",
-    "Stock market today: Nasdaq, S&P 500 rebound after brutal sell-off as US adds 165K jobs",
-    "How Nvidia's stock decline might impact your 401(k) and portfolio",
-    "Here’s Why Barclays’ Tom O’Malley Kept a Sell on Qualcomm (QCOM)",
-    "Sandisk bulls had a surprising third quarter",
-    "ITA vs ARKX: Can an Earthbound Aerospace ETF Outpace a Space Fund?",
-    "Why AST SpaceMobile Stock Jumped 14.1% Today",
-    "Do You Know How Much of Your 401(k) Is Riding on the AI Trade Voters Want Paused?",
-    "Top strategist: Nvidia CEO Jensen Huang's affair highlights key risk for tech companies",
-    "Stock Market Today: Dow Soars 1,500 Points, Lockheed Socked; Breadth Goes Bullish (Live Coverage)",
-    "What Has Changed In Caterpillar's Story?",
-    "3 Reasons to Avoid TFX and 1 Stock to Buy Instead",
-    "Stock Market Today: Dow Dips On Hot Inflation Data, Rate Hike Calls; Rubio Says This On Iran (Live Coverage)",
-    "3 Reasons SYF Has Explosive Upside Potential",
-    "Goldman Sachs sees S&P 500 surging 14% to 8,700 in 2027",
-    "Stock Market Today: Nasdaq Climbs Amid Peace Hopes; Nvidia Holds Key Level Amid Musk News (Live Coverage)",
-    "Which Gold ETF Is the Better Buy: iShares’ Gold Trust IAU or Sprott’s Gold Miners SGDM?",
-    "Stocks rise on tech gains; Nvidia falls after hours ",
-    "Buy Target Stock, Analyst Says. The Turnaround Is Taking Hold.",
-    "SPDW vs SCHE: Does a Developed Markets ETF Outpace an Emerging Markets Focus?",
-    "Stock Market Today: Nasdaq Retakes Key Level; Ad Platform Provider Hits Highs (Live Coverage)",
-    "10-year Treasuries cross above 5%, but are other market risks showing up?",
-    "Update: Nasdaq Enters Correction Territory as Volatility Spikes Amid Chip Rout",
-    "Nvidia's boardroom bombshell hits a fragile chip rally: Chart of the Day",
     "CoreWeave surges, but bigger tests loom for the AI trade",
+    "Buy Target Stock, Analyst Says. The Turnaround Is Taking Hold.",
+    "What consumer confidence really says about the K-shaped economy",
     "Blue wave sparks Wall Street rally after midterms",
-    "Stock Market Today, Nov. 12: Nvidia Shares Slide on Reports of CEO Jensen Huang's Resignation",
-    "Stock market today: Dow, S&P 500, Nasdaq dive as Nvidia stock falls ahead of earnings, Anthropic IPO looms",
-    "Nearly a tenth of the S&P 500 is tied to three men with no clear successors",
-    "$3 trillion was wiped off the S&P 500 — but it ain't doomsday",
-    "Stock market today: Nasdaq surges despite Nvidia stock slide, Dow and S&P 500 rally as AI tech trade rises",
-    "iShares Semiconductor ETF vs. iShares U.S. Technology ETF: Which Is the Better Buy Right Now?",
-    "Stocks, Gold, and Asia Bleed $2.2 Trillion: Top 5 Factors That Triggered the Crash",
-    "3 High-Yield Healthcare Stocks to Buy With $1,000 and Hold Through Any Market",
-    "What Does Ralph Lauren Stock's Winning Streak Really Prove?",
-    "Stock Market Today: Indexes Trim Losses, Manage To Score Weekly Gains Despite Strong Volatility",
-    "Here's Why You Should Hold on to Republic Services Stock for Now",
-    "Here’s Why Truist and Evercore Slashed Their Price Targets on Microchip (MCHP)",
-    "Why Gevo Stock Rocketed Higher Today",
-    "Crypto’s Worst Week Since June",
-    "Goldman Sachs calls chip stocks 'oversold.' Here are the names it says to buy.",
-    "Stocks rebound after tech selloff that pushed Nasdaq into correction",
-    "Stocks could have a tough road ahead if the Fed hikes rates: Chart of the Day",
-    "Everpure Down 22%: What Would Its CEO Say?",
-    "Stock market today: Dow, S&P 500, Nasdaq slip after CPI data raises Fed rate-hike bets",
-    "Stock Market Today, Nov. 9: Grab Holdings Jumps on Record Adjusted EBITDA and Q3 Revenue Beat",
+    "Wall Street slumps on AI jitters ahead of Nvidia results, Anthropic IPO ",
+    "What Has Changed In Caterpillar's Story?",
+    "Stock Market Today, Nov. 4: Amazon Jumps 6% From New Perspective on AWS Growth and AI Strategy Following Election Results",
+    "3 Reasons to Avoid TFX and 1 Stock to Buy Instead",
+    "Why AST SpaceMobile Stock Jumped 14.1% Today",
+    "Industrials Push Stock Indexes to Broad-Based Rally",
+    "ITA vs ARKX: Can an Earthbound Aerospace ETF Outpace a Space Fund?",
     "Oppenheimer resets Microsoft stock price target after HQ visit",
-    "Why rising long-term yields can matter more than the next Fed hike",
-    "Stock Market Today, Nov. 16: IREN Slides as Neocloud Weakness and Tech Sector Selling Put Pressure on Shares",
+    "Stock Market Today, Nov. 11: Advanced Micro Devices Jumps -- and Not Only Because of CoreWeave's Results",
+    "3 Reasons MHK is Risky and 1 Stock to Buy Instead",
+    "Stock market today: Nasdaq surges despite Nvidia stock slide, Dow and S&P 500 rally as AI tech trade rises",
+    "What Happened With Rigetti Computing Stock Yesterday?",
+    "BofA Raised Its Earnings Estimates but Cut Its Target on AMD (AMD), Here’s Why",
+    "Update: US Equity Indexes Jump as Crude Oil Slides Amid Iran's Conditional Proposal to Reopen Hormuz Chokepoint",
     "Stock market today: Nasdaq plunges 5% amid chip stock wipeout, Dow and S&P 500 erase post-election rally gains",
-    "Is the S&P 500 Heading for a Correction?",
+    "Stock Market Today: Dow Wavers; Two Healthcare Names Shine In IBD 50 (Live Coverage)",
+    "Stock market today: Nasdaq leads Dow, S&P 500 lower as chip stock sell-off accelerates",
+    "Stocks had their worst day in 18 months — here's what that means for your portfolio",
+    "Wall Street's $1.6 trillion rebound may look like a bottom — history says it often isn't: Chart of the Day",
+    "Stock Market Today: Dow Dives As Nvidia Makes Huang Decision; These AI Plays Plunge (Live Coverage)",
+    "Stocks rebound after tech selloff that pushed Nasdaq into correction",
+    "The market is ready for a few more rate hikes",
+    "2 Reasons to Like CRC and 1 to Stay Skeptical",
+    "3 Reasons GIS is Risky and 1 Stock to Buy Instead",
+    "Top strategist: Nvidia CEO Jensen Huang's affair highlights key risk for tech companies",
+    "Is Chevron Stock A Real Bargain?",
+    "Stock market today: Dow, S&P 500, Nasdaq dive as Nvidia stock falls ahead of earnings, Anthropic IPO looms",
+    "Update: Nasdaq Composite Rallies to Record as AI Trade Lifts Chipmakers",
+    "Goldman Sachs sees S&P 500 surging 14% to 8,700 in 2027",
+    "CSBR Stock Slips Post Q1 Earnings Despite Revenue, Margin Growth",
+    "Stock market today: Dow, S&P 500, Nasdaq slide as bond sell-off troubles markets, China's Xi Jinping lands in US",
+    "Stocks, Gold, and Asia Bleed $2.2 Trillion: Top 5 Factors That Triggered the Crash",
     "Inverse Equity ETFs to Consider Amid Rising Market Risks",
+    "$3 trillion wipe-out, CEOs on the volatility of politics, and the status of the AI trade",
+    "Stock Market Today, Nov. 16: IREN Slides as Neocloud Weakness and Tech Sector Selling Put Pressure on Shares",
+    "History Says Investing in the Stock Market During a Bear Market Is the Smartest Move You Can Make. Here's Why.",
+    "5 Consumer Staples Stocks Reaching New Highs as Markets Retreat",
+    "Stock Market Today: Nasdaq Sinks As Nvidia Drops; Finance Stock Jumps (Live Coverage)",
+    "How Nvidia's stock decline might impact your 401(k) and portfolio",
+    "Analysts Just Slashed Their Price Targets on These 5 Stocks",
+    "Stock market tumbles on post-election reset",
+    "Dow Jones Futures: Market Needs Repair But Sandisk, Micron Broken; Apple, Amazon, Microsoft Strong",
+    "Why bond king Jeffrey Gundlach is steering clear of the AI 'blast radius'",
+    "Stock Market Today, Nov. 4: Dow Surges 3% in Biggest Post-Midterm Rally in 44 Years",
+    "Update: US Equity Indexes Drop as Robust Output Growth Galvanizes Fed Rate-Increase Bets",
+    "S&P 500, Dow, Nasdaq End Lower As Investors Hold Back Ahead Of Nvidia Earnings, Anthropic IPO This Week —  NVDA, TSLA, ANT In Focus",
+    "Why Did CRWD, ELMT, OKTA Stocks Surge To 52-Week Highs Today?",
+    "Adobe (ADBE) Is Down About 31% This Year. Here’s What Citi’s Tyler Radke Sees Next",
+    "ELF Beauty Soars 52% Amid Earnings Beat; Nears Buy Point As Market Crumbles",
+    "Stock market today: Dow, S&P 500, Nasdaq turn higher as Nvidia stock slides after CEO Jensen Huang resigns",
+    "Dow Jones Futures: Stock Market Falls On Surging Treasury Yields, Nvidia Sell-Off; CoreWeave Rises Late",
+    "Seagate Technology (STX): The Primary Beneficiary of the AI Driven HDD Demand",
+    "The Chinese Car Market Is Still a Mess",
+    "Stock Market Today: Dow Dips Amid Midterm Elections; Palantir Slips, DuPont Surges Past Entry",
+    "What's dragging down the S&P 500? Apple in focus",
+    "ABM Stock Rises 12.7% in Three Months: Here's What You Should Know",
+    "Stocks Slip After Rising Oil and Yields Take Away Early Morning Gains",
+    "Goldman Sachs calls chip stocks 'oversold.' Here are the names it says to buy.",
+    "Why Gevo Stock Rocketed Higher Today",
+    "Update: Equity Markets Drop Intraday as Traders Await Nvidia Earnings",
+    "How Low Can First Solar Stock Go?",
+    "What History Reveals About Stock Market Crashes During Presidential Transitions",
+    "Stock Market Today: Dow Dips On Hot Inflation Data, Rate Hike Calls; Rubio Says This On Iran (Live Coverage)",
+    "3 High-Yield Healthcare Stocks to Buy With $1,000 and Hold Through Any Market",
+    "Stocks Rally as Tech Rebound Continues and Hopes of a U.S.-Iran Deal Climb",
+    "Update: Wall Street Notches Weekly Gains Despite Nvidia Sell-Off",
+    "Update: Nasdaq Enters Correction Territory as Volatility Spikes Amid Chip Rout",
+    "$3 trillion was wiped off the S&P 500 — but it ain't doomsday",
+    "Stock market today: Nasdaq, S&P 500, Dow rise as Nvidia stock recovers, chip stocks rally after CoreWeave earnings",
+    "IonQ Is Up 3% in a Week. Is Its “Industry Record” Guidance Really That Good?",
+    "Update: US Equity Indexes Trade Mixed Amid Higher Crude Oil, Treasury Yields",
+    "What Does Ralph Lauren Stock's Winning Streak Really Prove?",
+    "How Much Should One Number Worry Starbucks Shareholders?",
+    "S&P 500 Posts Weekly Drop as Energy, Technology Slide in Election Aftermath",
+    "Goldman Sachs is looking for a big year for stocks in 2027",
+    "iShares Semiconductor ETF vs. iShares U.S. Technology ETF: Which Is the Better Buy Right Now?",
+    "S&P 500 Plunges, Wall Street Fears Circuit Breaker, Just One Day After Trump Celebrated Record Highs",
+    "Western Digital (WDC): The Fund’s Top Relative Contributor",
+    "Here’s Why Truist and Evercore Slashed Their Price Targets on Microchip (MCHP)",
+    "Stocks shrugged off the blue wave overnight — history says don't trust the bounce yet",
+    "Why Micron’s Dazzling Earnings Report Is Barely Moving the Stock",
+    "Guidance Up, Trend Intact: Mettler-Toledo Is Today's Double-Confirmation Stock",
+    "Here’s Why Barclays’ Tom O’Malley Kept a Sell on Qualcomm (QCOM)",
+    "Is the S&P 500 Heading for a Correction?",
+    "3 Reasons MCK Has Explosive Upside Potential",
+    "3 Reasons SYF Has Explosive Upside Potential",
+    "Consumer staples stocks benefiting from a powerful rotation as tech gets slammed",
+    "Stock Market Today, Nov. 12: AMD Jumps 5.9% on Bank of America Price Target Hike to $700",
+    "Stock Market Today: Nasdaq Climbs Amid Peace Hopes; Nvidia Holds Key Level Amid Musk News (Live Coverage)",
+    "Dow Jones Futures: Nasdaq Dives 5.5%, Nvidia, Sandisk, CoreWeave, SpaceX Plunge, But Sell-Off Spreads Beyond AI",
+    "Mezzi CEO reveals if customers take wealth management advice from AI",
+    "Here's Why You Should Hold on to Republic Services Stock for Now",
+    "9 Green Days In A Row: nVent Electric Stock Is Up 12%",
+    "Stock market today: Nasdaq, S&P 500 rebound after brutal sell-off as US adds 165K jobs",
     "Stock market today: Dow, S&P 500, Nasdaq trims losses as hopes of Hormuz deal offset rising bond yields",
+    "Stock Market Today, Nov. 13: AMD Sinks 8.75% on Sector AI-Chip Sell-Off After Early Gains Reverse",
+    "Stock market today: Dow, S&P 500, Nasdaq slip after CPI data raises Fed rate-hike bets",
+    "SPDW vs IXUS: Which International ETF Is the Better Buy for 2027?",
+    "Why investors are rethinking their bond strategies",
+    "Bessent grilled on the claim that ‘K-shaped economy is over’",
+    "Stock Market Today: Nasdaq Retakes Key Level; Ad Platform Provider Hits Highs (Live Coverage)",
+    "Update: Chipmakers Push US Equity Indexes Higher as Treasury Yields, Crude Oil Decline",
     "3 Reasons RCL is Risky and 1 Stock to Buy Instead",
-    "Palantir Tumbles 10%, CrowdStrike Sinks 9% as Wall Street Dumps Software’s AI Winners; Okta Drops 10%",
+    "SPDW vs SCHE: Does a Developed Markets ETF Outpace an Emerging Markets Focus?",
+    "Have markets finally found the 'right level' of interest rates?",
+    "Is Snowflake Buying Its Growth With Its Margin?",
+    "Stock Market Today: Nasdaq Slumps 4% As AI Unwinds; Qualcomm Tumbles On Soft Outlook (Live Coverage)",
+    "Applied Materials Stock Already Fell Without A Shock, So What Would A Real One Do?",
+    "Can Insulet Stock Jump 50%?",
+    "Stock Market Today, Nov. 9: Grab Holdings Jumps on Record Adjusted EBITDA and Q3 Revenue Beat",
+    "No Margin Account? This ETF Is the Most Popular Way to Short the S&P 500",
+    "Stock Market Today: Dow Gains 400 Points On U.S-Iran Peace Hopes; Micron Rises (Live Coverage)",
+    "Wall St jumps as oil slide cools inflation worries; Nvidia slumps",
+    "Crypto’s Worst Week Since June",
+    "Everpure Down 22%: What Would Its CEO Say?",
+    "Anthropic, Nvidia, CoreWeave, Take-Two, D-Wave, Securitize, and More That Explain Today’s Market",
+    "Josh Brown: Nvidia Has No “Jensen Premium” to Lose. It’s Been Cheap for 3 Years",
+    "2 Reasons to Avoid SIGI and 1 Stock to Buy Instead",
+    "Stocks could have a tough road ahead if the Fed hikes rates: Chart of the Day",
+    "Wall St edges up as AI enthusiasm eases worries over higher oil prices, yields",
+    "Stock Market Today: Indexes Turn South After Fed Hikes Rates By Quarter Point (Live Coverage)",
+    "Dow, S&P 500 and Nasdaq Fall Ahead of Fed Decision",
     "The S&P 500's shot at 4 straight double-digit years is in Nvidia's hands",
-    "Wall Street slumps on AI jitters ahead of Nvidia results, Anthropic IPO "
+    "10-year Treasuries cross above 5%, but are other market risks showing up?",
+    "Sandisk bulls had a surprising third quarter",
+    "Stock Market Today: Indexes Trim Losses, Manage To Score Weekly Gains Despite Strong Volatility",
+    "Why diesel price and Treasury yield relief would be huge wins for stocks",
+    "Stock Market Today, Nov. 13: Nu Holdings Surges on Record Q3 Earnings Beat Driven by Strong Revenue",
+    "Robinhood Sinks 6% for a Second Day, Circle Down 5%, Affirm Down 5% as Fintech Stocks Slide",
+    "Why Micron Technology Stock Gained On Monday",
+    "Do You Know How Much of Your 401(k) Is Riding on the AI Trade Voters Want Paused?",
+    "Is Merck's Stock Still a Good Buy at $150?",
+    "Can Dell Stock Fall 40%?",
+    "Micron Earnings Could Be the Catalyst This Wildly Popular ETF Needs",
+    "Update: US Equity Indexes Rebound, Treasury Yields Rise Following Blowout Jobs Report",
+    "Stocks rise on tech gains; Nvidia falls after hours ",
+    "Stock Market Today, Nov. 12: Nvidia Shares Slide on Reports of CEO Jensen Huang's Resignation",
+    "This Index Fund Could Turn $25,000 Into $20,635,655",
+    "Palantir Tumbles 10%, CrowdStrike Sinks 9% as Wall Street Dumps Software’s AI Winners; Okta Drops 10%",
+    "Dow Jones Discount Retail Giant Walmart Poised To Hit Buy Point With Earnings Due",
+    "Which Gold ETF Is the Better Buy: iShares’ Gold Trust IAU or Sprott’s Gold Miners SGDM?",
+    "Stocks, Bonds Climb as Oil Falls on US-Iran Hopes",
+    "Nearly a tenth of the S&P 500 is tied to three men with no clear successors",
+    "Stock market today: Dow, S&P 500, Nasdaq notch weekly wins as market shrugs off bond sell-off, oil prices ease",
+    "Nvidia is about 6% of the S&P 500. If Jensen Huang is ousted, there’s no clear successor — could chaos hit portfolios?"
   ]
 }
